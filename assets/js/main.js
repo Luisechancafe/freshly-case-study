@@ -81,7 +81,7 @@
   var animIO = new IntersectionObserver(function (entries) {
     entries.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add("is-animated"); animIO.unobserve(e.target); } });
   }, { threshold: 0.3 });
-  $$('[data-interactive="funnel"], [data-interactive="ice"], [data-interactive="chart"]').forEach(function (el) { animIO.observe(el); });
+  $$('[data-interactive="funnel"], [data-interactive="ice"], [data-interactive="chart"], [data-interactive="gchart"]').forEach(function (el) { animIO.observe(el); });
 
   /* -------- 8. Nav link activo -------- */
   var sections = $$("main section[id]");

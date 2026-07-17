@@ -22,14 +22,14 @@
 
   <!-- ============ MASTHEAD ============ -->
   <header class="masthead" id="masthead">
-    <a class="brand" href="#hero">Luise Chancafe <span class="brand__x">×</span> <span class="brand__co">Freshly Cosmetics</span></a>
+    <a class="brand" href="#hero">Luise Chancafe <span class="brand__x">·</span> <span class="brand__co">Case Study</span></a>
     <nav class="folio-nav" aria-label="Secciones">
-      <a href="#diagnostico">Diagnóstico</a>
-      <a href="#captacion">Captación</a>
-      <a href="#nov-dic">Nov-Dic</a>
-      <a href="#equipo">Equipo</a>
-      <a href="#plataforma">Plataforma</a>
-      <a href="#vision">Visión</a>
+      <a href="#diagnostico"><span class="n">01</span> Diagnóstico</a>
+      <a href="#captacion"><span class="n">02</span> Captación</a>
+      <a href="#nov-dic"><span class="n">03</span> Nov-Dic</a>
+      <a href="#equipo"><span class="n">04</span> Equipo</a>
+      <a href="#plataforma"><span class="n">05</span> Plataforma</a>
+      <a href="#vision"><span class="n">06</span> Visión</a>
     </nav>
     <div class="masthead__edition">
       <a class="btn-pdf" href="./assets/pdf/Freshly_CaseStudy_Luise_Chancafe.pdf" download>Descargar PDF</a>
@@ -39,12 +39,12 @@
     </div>
   </header>
   <nav class="nav-mobile" id="navMobile" aria-label="Secciones (móvil)">
-    <a href="#diagnostico">Diagnóstico</a>
-    <a href="#captacion">Captación</a>
-    <a href="#nov-dic">Nov-Dic</a>
-    <a href="#equipo">Equipo</a>
-    <a href="#plataforma">Plataforma</a>
-    <a href="#vision">Visión</a>
+    <a href="#diagnostico"><span class="n">01</span> Diagnóstico</a>
+    <a href="#captacion"><span class="n">02</span> Captación</a>
+    <a href="#nov-dic"><span class="n">03</span> Nov-Dic</a>
+    <a href="#equipo"><span class="n">04</span> Equipo</a>
+    <a href="#plataforma"><span class="n">05</span> Plataforma</a>
+    <a href="#vision"><span class="n">06</span> Visión</a>
     <a href="./assets/pdf/Freshly_CaseStudy_Luise_Chancafe.pdf" download>Descargar PDF</a>
   </nav>
 
@@ -61,11 +61,7 @@
         </div>
         <figure class="hero__portrait reveal">
           <div class="portrait-frame">
-            <div class="portrait-frame__ph">
-              <span>Retrato</span>
-              <em>Luise Chancafe</em>
-              <span>foto pendiente</span>
-            </div>
+            <div class="portrait-frame__ph"><span class="initials">LC</span></div>
             <!-- Para poner la foto real:
                  <img class="portrait-frame__img" src="./assets/img/luise.jpg" alt="Luise Chancafe Odar" /> -->
           </div>
@@ -99,17 +95,17 @@
           </div>
         </div>
 
-        <figure class="shot reveal">
-          <div class="shot__frame">
-            <span class="shot__badge">GA4</span>
-            <div class="shot__ph">
-              <em>Resumen de adquisición · 90 días</em>
-              <span>Sustituir por captura de GA4</span>
-            </div>
-            <!-- Para insertar la captura real:
-                 <img class="shot__img" src="./assets/img/ga4-resumen-90d.png" alt="GA4 · ingresos y sesiones 90 días" /> -->
+        <figure class="gchart reveal" data-interactive="gchart">
+          <figcaption class="gchart__title">Los canales que mejor convierten no son los que más inversión reciben</figcaption>
+          <div class="gbars" role="img" aria-label="Tasa de conversión de sesión por canal: Email 22,1%, SMS 21,1%, Paid Search 20,3%, Organic Social 19,2%, Referral 17,4%, Organic Search 15,1%.">
+            <div class="gbar gbar--red"><span class="gbar__label">Email</span><span class="gbar__track"><span class="gbar__fill" style="--w:88.4%"></span></span><span class="gbar__val tabular">22,1%</span></div>
+            <div class="gbar"><span class="gbar__label">SMS</span><span class="gbar__track"><span class="gbar__fill" style="--w:84.4%"></span></span><span class="gbar__val tabular">21,1%</span></div>
+            <div class="gbar"><span class="gbar__label">Paid Search</span><span class="gbar__track"><span class="gbar__fill" style="--w:81.2%"></span></span><span class="gbar__val tabular">20,3%</span></div>
+            <div class="gbar"><span class="gbar__label">Organic Social</span><span class="gbar__track"><span class="gbar__fill" style="--w:76.8%"></span></span><span class="gbar__val tabular">19,2%</span></div>
+            <div class="gbar"><span class="gbar__label">Referral</span><span class="gbar__track"><span class="gbar__fill" style="--w:69.6%"></span></span><span class="gbar__val tabular">17,4%</span></div>
+            <div class="gbar"><span class="gbar__label">Organic Search</span><span class="gbar__track"><span class="gbar__fill" style="--w:60.4%"></span></span><span class="gbar__val tabular">15,1%</span></div>
           </div>
-          <figcaption class="shot__cap"><strong>Captura sugerida:</strong> panel de GA4 con ingresos (15,25M€) y sesiones (8,86M) del periodo de 90 días.</figcaption>
+          <p class="gchart__src">Tasa de conversión de sesión por canal · Fuente: GA4, Adquisición de tráfico · 18 abr–16 jul 2026</p>
         </figure>
       </div>
     </section>
@@ -118,6 +114,7 @@
     <section class="chapter" id="diagnostico">
       <div class="container">
         <p class="eyebrow reveal"><span class="folio">01</span> Diagnóstico</p>
+        <p class="q-map reveal">Responde a la pregunta 1 del case: diagnóstico sobre datos de GA4 y tres hipótesis de test A/B priorizadas por impacto y esfuerzo.</p>
         <div class="summary reveal">
           <p>Tres capas antes de entrar en los números: negocio (dónde se gana y se pierde dinero), comportamiento (qué hace el usuario en cada paso del funnel) y técnica (qué señales pueden estar impactando sin que nadie las mida).</p>
           <p>Una veintena de hallazgos detectados. 3 priorizados.</p>
@@ -149,18 +146,7 @@
             </div>
           </div>
           <p class="block__note reveal">Del que ve un producto al que lo añade al carrito se pierde el 58%. Del carrito a la compra se pierde solo un 5% adicional. La fricción real está en la ficha de producto, no en el checkout.</p>
-
-          <figure class="shot reveal">
-            <div class="shot__frame">
-              <span class="shot__badge">GA4</span>
-              <div class="shot__ph">
-                <em>Exploración de embudo</em>
-                <span>Sustituir por captura de GA4</span>
-              </div>
-              <!-- <img class="shot__img" src="./assets/img/ga4-embudo.png" alt="GA4 · embudo ver producto → carrito → pago → compra" /> -->
-            </div>
-            <figcaption class="shot__cap"><strong>Captura sugerida:</strong> exploración de embudo en GA4 con los pasos view_item → add_to_cart → begin_checkout → purchase.</figcaption>
-          </figure>
+          <p class="gchart__src reveal">Fuente: GA4, informe de eventos (view_item → add_to_cart → begin_checkout → purchase) · 18 abr–16 jul 2026</p>
         </div>
 
         <!-- Tres fricciones -->
@@ -194,25 +180,25 @@
           <p class="block__hint reveal">Concentran ≈75% del revenue · es donde una mejora de conversión rinde más</p>
           <div class="products-row reveal" data-stagger>
             <figure class="product">
-              <div class="product__frame"><div class="product__ph"><span>Ancla</span><em>01</em></div>
+              <div class="product__frame product__frame--anchor"><div class="product__ph"><span class="initials">GR</span></div>
                 <!-- <img class="product__img" src="./assets/img/prod-golden-radiance.jpg" alt="Golden Radiance Body Oil" /> --></div>
-              <figcaption class="product__cap"><strong>Golden Radiance Body Oil</strong><span>16.703 reseñas</span></figcaption>
+              <figcaption class="product__cap"><strong>Golden Radiance Body Oil</strong><span>Ancla · 16.703 reseñas</span></figcaption>
             </figure>
             <figure class="product">
-              <div class="product__frame"><div class="product__ph"><span>Producto</span><em>02</em></div></div>
-              <figcaption class="product__cap"><strong>Producto principal</strong><span>foto pendiente</span></figcaption>
+              <div class="product__frame"><div class="product__ph"><span class="initials">BR</span></div></div>
+              <figcaption class="product__cap"><strong>Bronzing Radiance Self-Tanning Cream</strong></figcaption>
             </figure>
             <figure class="product">
-              <div class="product__frame"><div class="product__ph"><span>Producto</span><em>03</em></div></div>
-              <figcaption class="product__cap"><strong>Producto principal</strong><span>foto pendiente</span></figcaption>
+              <div class="product__frame"><div class="product__ph"><span class="initials">HR</span></div></div>
+              <figcaption class="product__cap"><strong>Hair Radiance Keratin Spray</strong></figcaption>
             </figure>
             <figure class="product">
-              <div class="product__frame"><div class="product__ph"><span>Producto</span><em>04</em></div></div>
-              <figcaption class="product__cap"><strong>Producto principal</strong><span>foto pendiente</span></figcaption>
+              <div class="product__frame"><div class="product__ph"><span class="initials">CM</span></div></div>
+              <figcaption class="product__cap"><strong>Caring Microbiome Smart Deodorant</strong></figcaption>
             </figure>
             <figure class="product">
-              <div class="product__frame"><div class="product__ph"><span>Producto</span><em>05</em></div></div>
-              <figcaption class="product__cap"><strong>Producto principal</strong><span>foto pendiente</span></figcaption>
+              <div class="product__frame"><div class="product__ph"><span class="initials">D+</span></div></div>
+              <figcaption class="product__cap"><strong>D+ Natural Suncare Mineral Lotion</strong></figcaption>
             </figure>
           </div>
         </div>
@@ -236,22 +222,35 @@
               <li>Bizum ausente en métodos de pago, con España como mercado nº1 y 92% mobile</li>
               <li>Test de perfil (Freshly Test) con potencial infrautilizado en el journey posterior</li>
             </ul>
-            <div class="shots-2">
-              <figure class="shot">
-                <div class="shot__frame">
-                  <span class="shot__badge">GA4</span>
-                  <div class="shot__ph"><em>Eventos de error (exception)</em><span>Sustituir por captura</span></div>
-                  <!-- <img class="shot__img" src="./assets/img/ga4-errores-js.png" alt="GA4 · eventos exception" /> -->
+            <div class="gcharts-2" data-interactive="gchart">
+              <figure class="gchart gchart--mini">
+                <figcaption class="gchart__title">Tráfico por dispositivo</figcaption>
+                <div class="gdonut">
+                  <svg viewBox="0 0 120 120" role="img" aria-label="Dispositivos: mobile 92%, desktop 6%, tablet 2%.">
+                    <g transform="rotate(-90 60 60)" fill="none" stroke-width="15">
+                      <circle class="seg seg--track" cx="60" cy="60" r="42"></circle>
+                      <circle class="seg seg--a" cx="60" cy="60" r="42" stroke-dasharray="242.8 263.9" stroke-dashoffset="0"></circle>
+                      <circle class="seg seg--b" cx="60" cy="60" r="42" stroke-dasharray="15.83 263.9" stroke-dashoffset="-242.8"></circle>
+                      <circle class="seg seg--c" cx="60" cy="60" r="42" stroke-dasharray="5.28 263.9" stroke-dashoffset="-258.63"></circle>
+                    </g>
+                    <text class="gdonut__big" x="60" y="58" text-anchor="middle">92%</text>
+                    <text class="gdonut__sub" x="60" y="76" text-anchor="middle">mobile</text>
+                  </svg>
+                  <ul class="glegend">
+                    <li><span class="dot dot--a"></span>Mobile 92%</li>
+                    <li><span class="dot dot--b"></span>Desktop 6%</li>
+                    <li><span class="dot dot--c"></span>Tablet 2%</li>
+                  </ul>
                 </div>
-                <figcaption class="shot__cap"><strong>Captura sugerida:</strong> volumen de eventos <code>exception</code> y % de usuarios afectados (~12%).</figcaption>
+                <p class="gchart__src">Fuente: GA4, Tech overview</p>
               </figure>
-              <figure class="shot">
-                <div class="shot__frame">
-                  <span class="shot__badge">GA4</span>
-                  <div class="shot__ph"><em>Desglose por dispositivo</em><span>Sustituir por captura</span></div>
-                  <!-- <img class="shot__img" src="./assets/img/ga4-dispositivo.png" alt="GA4 · device category" /> -->
+              <figure class="gchart gchart--mini">
+                <figcaption class="gchart__title">Usuarios afectados por errores JS</figcaption>
+                <div class="gbars gbars--mini">
+                  <div class="gbar gbar--red"><span class="gbar__label">Con error</span><span class="gbar__track"><span class="gbar__fill" style="--w:12%"></span></span><span class="gbar__val tabular">12%</span></div>
+                  <div class="gbar"><span class="gbar__label">Sin error</span><span class="gbar__track"><span class="gbar__fill" style="--w:88%"></span></span><span class="gbar__val tabular">88%</span></div>
                 </div>
-                <figcaption class="shot__cap"><strong>Captura sugerida:</strong> reparto por dispositivo (mobile 92% · desktop 6% · tablet 2%).</figcaption>
+                <p class="gchart__src">Fuente: GA4, evento js_error · ~2,4M eventos en 90 días</p>
               </figure>
             </div>
           </div>
@@ -398,10 +397,20 @@
     <section class="chapter" id="captacion">
       <div class="container">
         <p class="eyebrow reveal"><span class="folio">02</span> Funnel de captación</p>
+        <p class="q-map reveal">Responde a la pregunta 2: estrategia de captación que alcance LTV/CAC &gt; 1 a 6 meses, del primer impacto a la segunda compra.</p>
         <div class="summary reveal">
           <p>El objetivo no se logra en la primera compra. Se logra en la segunda. Con el ticket medio y el coste de captación habituales del sector, la primera compra raramente deja margen suficiente por sí sola. La rentabilidad se activa cuando el cliente repite.</p>
           <p>Con solo 1 de cada 4 compradores repitiendo, subir la inversión en captación no resuelve el problema — lo amplifica.</p>
         </div>
+
+        <figure class="gchart gchart--cols reveal" data-interactive="gchart">
+          <figcaption class="gchart__title">1 de cada 4 compradores repite</figcaption>
+          <div class="gcols" role="img" aria-label="Compradores nuevos 199K frente a recurrentes 67K.">
+            <div class="gcol"><span class="gcol__bar"><span class="gcol__fill" style="--h:100%"></span></span><span class="gcol__val tabular">199K</span><span class="gcol__label">Nuevos</span></div>
+            <div class="gcol gcol--red"><span class="gcol__bar"><span class="gcol__fill" style="--h:33.7%"></span></span><span class="gcol__val tabular">67K</span><span class="gcol__label">Recurrentes</span></div>
+          </div>
+          <p class="gchart__src">Fuente: GA4, Monetización · compradores 90 días</p>
+        </figure>
 
         <ul class="levers reveal" data-stagger>
           <li><span class="levers__mark">↑</span> Subir la tasa de segunda compra</li>
@@ -477,9 +486,9 @@
         <div class="block">
           <div class="anchor reveal">
             <figure class="product">
-              <div class="product__frame"><div class="product__ph"><span>Producto ancla</span><em>★</em></div>
+              <div class="product__frame product__frame--anchor"><div class="product__ph"><span class="initials">GR</span></div>
                 <!-- <img class="product__img" src="./assets/img/prod-golden-radiance.jpg" alt="Golden Radiance Body Oil" /> --></div>
-              <figcaption class="product__cap"><strong>Golden Radiance Body Oil</strong><span>foto pendiente</span></figcaption>
+              <figcaption class="product__cap"><strong>Golden Radiance Body Oil</strong><span>Producto ancla</span></figcaption>
             </figure>
             <div>
               <span class="anchor__tag">Producto ancla</span>
@@ -547,6 +556,7 @@
     <section class="chapter" id="nov-dic">
       <div class="container">
         <p class="eyebrow reveal"><span class="folio">03</span> Plan noviembre–diciembre</p>
+        <p class="q-map reveal">Responde a la pregunta 3: plan promocional de noviembre y diciembre con calendario, forecast y estrategia de email.</p>
         <div class="summary reveal">
           <p>Maximizar ventas sin quemar margen. El error habitual es repetir el Black Friday del año anterior con más descuento. Eso educa al cliente a esperar el precio rebajado. La propuesta busca lo mismo con otra vía: mecánicas que suben el ticket medio en vez de bajar el precio unitario.</p>
         </div>
@@ -659,6 +669,7 @@
     <section class="chapter" id="equipo">
       <div class="container">
         <p class="eyebrow reveal"><span class="folio">04</span> Organización de equipo</p>
+        <p class="q-map reveal">Responde a la pregunta 4: procedimientos de organización, planificación y comunicación del equipo.</p>
         <div class="summary reveal">
           <p>Tres rituales, tres herramientas, un principio. Un equipo multidisciplinar gestiona en paralelo tres flujos: lo planificado (~70%), lo reactivo (~20%) y lo emergente (~10%). El modelo no busca controlarlo todo — busca dar ritmo sin caer en reunión constante.</p>
         </div>
@@ -720,6 +731,7 @@
     <section class="chapter" id="plataforma">
       <div class="container">
         <p class="eyebrow reveal"><span class="folio">05</span> Plataforma e IA</p>
+        <p class="q-map reveal">Responde a la pregunta 5: recomendación sobre la migración a Shopify y usos de la IA en el negocio.</p>
         <div class="summary reveal">
           <p><strong>Migración a Shopify: sí, por razones estructurales.</strong> No es una moda tecnológica. Es la plataforma resolviendo problemas ya identificados en el diagnóstico.</p>
         </div>
@@ -727,30 +739,24 @@
         <!-- INTERACTIVO 5 — Comparador antes/después -->
         <div class="block">
           <h3 class="block__title reveal">Antes / después</h3>
-          <div class="compare reveal" data-interactive="compare">
-            <div class="compare__tabs" role="tablist" aria-label="Comparador de plataforma">
-              <button class="compare__tab is-active" role="tab" aria-selected="true" id="tab-before" aria-controls="panel-before" type="button">
-                <span class="plat">
-                  <svg class="plat__mark" viewBox="0 0 40 40" aria-hidden="true"><rect x="2" y="2" width="36" height="36" rx="9" fill="#DF0067"/><text x="20" y="28" fill="#fff" font-family="Arial, sans-serif" font-size="24" font-weight="700" text-anchor="middle">P</text></svg>
-                  <span class="plat__name">PrestaShop <span class="plat__tag">hoy</span></span>
-                </span>
-              </button>
-              <button class="compare__tab" role="tab" aria-selected="false" id="tab-after" aria-controls="panel-after" type="button">
-                <span class="plat">
-                  <svg class="plat__mark" viewBox="0 0 40 40" aria-hidden="true"><rect x="2" y="2" width="36" height="36" rx="9" fill="#95BF47"/><path fill="#fff" d="M20 9c-2.9 0-4.6 2.6-4.9 5.2l-2.6.8c-.7.2-.8.3-.9 1L9.4 31h13.9l-1.9-22c-.4-.05-.9-.05-1.4-.05zm0 2.2c.2 0 .4 0 .6.05-1 .3-2 1.4-2.4 3.4l-1.9.6c.3-2 1.5-4.1 3.7-4.1z"/><path fill="#5E8E3E" d="M24.1 31H23L21.5 9.05c.6.1 1 .5 1.3 1.1l1.1 2.3 2.4.7c.4.15.5.3.5.7z"/></svg>
-                  <span class="plat__name">Shopify <span class="plat__tag">propuesta</span></span>
-                </span>
-              </button>
-            </div>
-            <div class="compare__panel is-active" role="tabpanel" id="panel-before" aria-labelledby="tab-before" tabindex="0">
-              <ul class="tick-list tick-list--neutral">
+          <div class="compare2 reveal">
+            <div class="compare2__col">
+              <div class="compare2__head">
+                <svg class="plat__mark" viewBox="0 0 40 40" aria-hidden="true"><rect x="2" y="2" width="36" height="36" rx="9" fill="#DF0067"/><text x="20" y="28" fill="#fff" font-family="Arial, sans-serif" font-size="24" font-weight="700" text-anchor="middle">P</text></svg>
+                <span class="compare2__name">PrestaShop <span class="compare2__tag">hoy</span></span>
+              </div>
+              <ul class="tick-list tick-list--x">
                 <li>Errores de JavaScript detectados en el diagnóstico</li>
                 <li>Integraciones a medida más lentas</li>
                 <li>Time-to-market alto</li>
                 <li>Desarrollo custom para nuevos canales</li>
               </ul>
             </div>
-            <div class="compare__panel" role="tabpanel" id="panel-after" aria-labelledby="tab-after" tabindex="0" hidden>
+            <div class="compare2__col compare2__col--accent">
+              <div class="compare2__head">
+                <svg class="plat__mark" viewBox="0 0 40 40" aria-hidden="true"><rect x="2" y="2" width="36" height="36" rx="9" fill="#95BF47"/><path fill="#fff" d="M20 9c-2.9 0-4.6 2.6-4.9 5.2l-2.6.8c-.7.2-.8.3-.9 1L9.4 31h13.9l-1.9-22c-.4-.05-.9-.05-1.4-.05zm0 2.2c.2 0 .4 0 .6.05-1 .3-2 1.4-2.4 3.4l-1.9.6c.3-2 1.5-4.1 3.7-4.1z"/><path fill="#5E8E3E" d="M24.1 31H23L21.5 9.05c.6.1 1 .5 1.3 1.1l1.1 2.3 2.4.7c.4.15.5.3.5.7z"/></svg>
+                <span class="compare2__name">Shopify <span class="compare2__tag compare2__tag--accent">propuesta</span></span>
+              </div>
               <ul class="tick-list tick-list--green">
                 <li>Elimina de raíz los errores JS</li>
                 <li>Integración nativa con TikTok Shop sin desarrollo a medida</li>
@@ -799,20 +805,23 @@
     <section class="chapter" id="vision">
       <div class="container">
         <p class="eyebrow reveal"><span class="folio">06</span> Visión personal</p>
+        <p class="q-map reveal">Responde a la pregunta 6: la principal responsabilidad del rol y el valor que puedo aportar.</p>
         <div class="summary reveal">
-          <p>Cómo entiendo el rol y qué aportaría. La principal responsabilidad de este rol es ser el <strong>responsable directo del resultado económico del canal DTC</strong>. No solo de las ventas — del beneficio. Definir estrategia de pricing y promociones por mercado, coordinar con Paid, CRM, Producto y Marca, y no perder de vista que el reto de los próximos meses no es crecer más rápido, es <strong>crecer mejor</strong>.</p>
+          <p>Cómo entiendo el rol: la principal responsabilidad es ser el <span class="hl">responsable directo del resultado económico</span> del canal DTC. No solo de las ventas — del beneficio. Definir estrategia de pricing y promociones por mercado, y coordinar con Paid, CRM, Producto y Marca.</p>
         </div>
 
-        <div class="cols-3 reveal" data-stagger>
-          <article class="col">
-            <h4 class="col__title">Perfil poco frecuente</h4>
-            <p>18 años cruzando eCommerce, marketing digital y automatización, con base real en branding, packaging y publicidad. <span class="tag-inline">perfil T-shape</span></p>
+        <p class="pullquote pullquote--wide reveal">El reto de los próximos meses no es crecer más rápido. Es <span class="hl">crecer mejor</span>.</p>
+
+        <div class="cols-3 cols-3--cards reveal" data-stagger>
+          <article class="col col--card">
+            <h4 class="col__title">Perfil <span class="hl">T-shape</span></h4>
+            <p>18 años cruzando eCommerce, marketing digital y automatización, con base real en branding, packaging y publicidad. Profundidad en el canal, amplitud en todo lo que lo rodea.</p>
           </article>
-          <article class="col">
-            <h4 class="col__title">Mentalidad de guardián del canal</h4>
-            <p>Cuidar el margen como algo propio, preguntar primero por la rentabilidad antes que por el volumen.</p>
+          <article class="col col--card">
+            <h4 class="col__title"><span class="hl">Guardián del canal</span></h4>
+            <p>Cuidar el margen como algo propio. Preguntar primero por la rentabilidad antes que por el volumen.</p>
           </article>
-          <article class="col">
+          <article class="col col--card">
             <h4 class="col__title">Forma de trabajar sana</h4>
             <p>Positivo, sin drama, con capacidad de foco intenso cuando un tema me apasiona — así aprendo herramientas nuevas rápido.</p>
           </article>
