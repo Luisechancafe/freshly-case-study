@@ -654,8 +654,8 @@ p.gchart__src { margin-top: var(--s2); }
 .gb__lab { font-size: .74rem; color: var(--ink-2); text-transform: uppercase; letter-spacing: .06em; margin-top: .2rem; text-align: center; }
 
 /* G7 — forecast: baseline + puntos interactivos */
-.chart { max-width: 880px; }
-.chart__svg { display: block; width: 100%; max-width: 820px; margin-inline: auto; }
+.chart { max-width: none; }
+.chart__svg { display: block; width: 100%; max-width: 100%; margin-inline: auto; }
 .chart__baseline { stroke: var(--ink-2); stroke-width: 1; stroke-dasharray: 4 4; opacity: .55; }
 .chart__baselab { fill: var(--ink-2); font-family: var(--font-text); font-size: 10px; letter-spacing: .04em; }
 .pt { cursor: pointer; }
