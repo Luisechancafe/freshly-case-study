@@ -733,3 +733,31 @@ p.gchart__src { margin-top: var(--s2); }
   .heat1 { width: 13px; height: 13px; } .heat2 { width: 18px; height: 18px; } .heat3 { width: 22px; height: 22px; }
   .gbars--wide .gbar { grid-template-columns: 92px 1fr auto; }
 }
+
+/* =========================================================================
+   FRONTERAS DE SECCIÓN — fondo alternado + cabecera potente + scroll-spy
+   ========================================================================= */
+
+/* 1 · Fondo alternado (transición nítida) */
+#diagnostico, #nov-dic, #plataforma { background: #141414; }
+#captacion, #equipo, #vision { background: #1B1B1B; }
+
+/* 2 · Cabecera de sección */
+.shead { margin-bottom: var(--s5); }
+.shead__line { height: 0; border-top: 1px solid #333; margin-bottom: var(--s4); }
+.shead__id { display: flex; align-items: baseline; gap: clamp(16px, 2.5vw, 34px); flex-wrap: wrap; }
+.shead__num { font-family: var(--font-display); font-weight: 600; font-size: clamp(64px, 10vw, 120px); line-height: .85; color: #DD2847; letter-spacing: -0.02em; }
+.shead__name { font-family: var(--font-display); font-weight: 600; font-size: clamp(28px, 4vw, 44px); line-height: 1; color: #fff; letter-spacing: -0.01em; margin: 0; }
+.qbox { margin-top: var(--s4); max-width: 760px; border-left: 3px solid #DD2847; padding: 20px; border-radius: 0 var(--r-card) var(--r-card) 0; }
+#diagnostico .qbox, #nov-dic .qbox, #plataforma .qbox { background: #1E1E1E; }
+#captacion .qbox, #equipo .qbox, #vision .qbox { background: #242424; }
+.qbox__label { display: block; font-size: 11px; text-transform: uppercase; letter-spacing: .14em; color: var(--ink-2); margin-bottom: 8px; }
+.qbox__text { font-size: 15.5px; line-height: 1.5; color: #DDD; font-style: normal; margin: 0; }
+
+/* 3 · Scroll-spy: sección activa en rojo */
+.folio-nav a.is-active { color: var(--accent); }
+
+/* 4 · Móvil: número apilado sobre el nombre */
+@media (max-width: 560px) {
+  .shead__id { flex-direction: column; align-items: flex-start; gap: 4px; }
+}
