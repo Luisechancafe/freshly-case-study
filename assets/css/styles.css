@@ -792,6 +792,73 @@ p.gchart__src { margin-top: var(--s2); }
 .fday.is-shown { display: table-row; }
 .fday td, .fday th { font-size: .82rem; color: var(--ink-2); font-weight: 400; }
 
+/* =========================================================================
+   VÍDEO · FOTOS DE PRODUCTO · CTA · BOTONES PDF · CHIPS DE CONTACTO
+   ========================================================================= */
+
+/* nav: enlace a vídeo */
+.nav-vid { color: var(--accent) !important; white-space: nowrap; }
+.nav-vid::after { background: var(--accent) !important; }
+/* nav más compacto para que quepan las 7 anclas + PDF */
+.masthead { padding-inline: clamp(20px, 3.5vw, 80px); gap: var(--s2); }
+.folio-nav { gap: clamp(12px, 1.3vw, 20px); }
+.folio-nav a { letter-spacing: .1em; }
+
+/* bloque de vídeo */
+.videocard { background: #1F1F1F; border: 1px solid var(--line); border-radius: var(--r-card); padding: clamp(22px, 4vw, 48px); max-width: 1000px; }
+.videocard__title { font-family: var(--font-display); font-weight: 600; font-size: clamp(1.35rem, 1rem + 1.7vw, 2.2rem); line-height: 1.15; margin: var(--s2) 0; max-width: 30ch; }
+.videocard__sub { font-family: var(--font-display); font-style: italic; font-size: .95rem; color: var(--ink-2); margin-bottom: var(--s4); }
+.videoframe { position: relative; aspect-ratio: 16 / 9; border-radius: var(--r-card); overflow: hidden; border: 1px solid var(--line); background: #000; }
+.videoframe iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+
+/* fotos reales de producto */
+.product__img--photo { background: #fff; object-fit: cover; object-position: center; }
+.product__frame:has(.product__img--photo)::after { display: none; }
+.products-row__credit { font-size: .72rem; color: var(--ink-2); margin-top: var(--s3); }
+
+/* CTA · trabajemos juntos */
+.worktogether { padding: var(--s7) var(--mx); border-top: 1px solid var(--line-soft); text-align: center; }
+.wt__inner { max-width: 760px; }
+.wt__title { font-family: var(--font-display); font-weight: 600; font-size: clamp(1.8rem, 1rem + 3vw, 3rem); line-height: 1.1; }
+.wt__sub { font-size: clamp(1.05rem, 1rem + .5vw, 1.35rem); color: var(--ink-2); margin: var(--s3) 0 var(--s5); }
+.wt__sub strong { color: var(--ink); }
+.wt__btns { display: flex; flex-wrap: wrap; gap: var(--s3); justify-content: center; }
+.wtbtn { display: inline-flex; align-items: center; gap: .55rem; font-family: var(--font-text); font-weight: 700; font-size: .92rem; padding: 14px 24px; border-radius: var(--r-card); border: 1px solid transparent; transition: transform .15s var(--ease), background .2s; }
+.wtbtn svg { width: 18px; height: 18px; flex: 0 0 auto; }
+.wtbtn--wa { background: var(--accent); color: #fff; animation: pulseSoft 2.6s ease-in-out infinite; }
+.wtbtn--wa:hover { animation-play-state: paused; transform: translateY(-1px); }
+.wtbtn--mail { border-color: var(--accent); color: var(--ink); }
+.wtbtn--mail:hover { background: var(--accent-soft); transform: translateY(-1px); }
+
+/* botones Descargar PDF — bold blanco + pulso suave */
+@keyframes pulseSoft { 0%, 100% { box-shadow: 0 0 0 0 rgba(242,69,92,.45); } 50% { box-shadow: 0 0 0 9px rgba(242,69,92,0); } }
+@keyframes pulseSoftWhite { 0%, 100% { box-shadow: 0 0 0 0 rgba(255,255,255,.5); } 50% { box-shadow: 0 0 0 9px rgba(255,255,255,0); } }
+.btn-pdf { font-weight: 700; color: #fff; animation: pulseSoft 2.6s ease-in-out infinite; }
+.btn-pdf:hover { animation-play-state: paused; transform: translateY(-1px); }
+.close__pdf { font-weight: 700; color: #fff; animation: pulseSoftWhite 2.6s ease-in-out infinite; }
+.close__pdf:hover { animation-play-state: paused; }
+@media (prefers-reduced-motion: reduce) { .btn-pdf, .close__pdf, .wtbtn--wa { animation: none; } }
+
+/* chips de contacto */
+.chips { display: flex; flex-wrap: wrap; align-items: center; gap: .55rem; }
+.chips__name { font-size: .78rem; color: var(--ink-2); text-transform: uppercase; letter-spacing: .1em; margin-right: .3rem; }
+.chip { display: inline-flex; align-items: center; gap: .45rem; font-size: .82rem; padding: 6px 14px; border-radius: 999px; border: 1px solid rgba(255,59,87,.4); color: var(--ink); transition: background .2s, border-color .2s; }
+.chip svg { width: 14px; height: 14px; flex: 0 0 auto; }
+.chip:hover { background: var(--accent-soft); border-color: var(--accent); }
+.hero__chips { margin-top: var(--s5); }
+.close__chips { justify-content: center; margin-bottom: var(--s4); }
+.close .chips__name { color: rgba(255,255,255,.85); }
+.close .chip { border-color: rgba(255,255,255,.5); color: #fff; }
+.close .chip:hover { background: rgba(255,255,255,.14); border-color: #fff; }
+
+/* footer: segundo párrafo */
+.close__text2 { font-family: var(--font-display); font-style: italic; font-size: clamp(1rem, .9rem + .6vw, 1.3rem); line-height: 1.42; max-width: 46ch; margin: 0 auto var(--s4); opacity: .9; }
+
+@media (max-width: 560px) {
+  .wt__btns { flex-direction: column; }
+  .wtbtn { justify-content: center; }
+}
+
 /* impresión / PDF */
 @media print {
   * { -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; }
