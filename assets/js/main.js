@@ -155,4 +155,94 @@
     render();
   }
 
+  /* -------- 13. Tooltips reutilizables + resaltado del elemento activo -------- */
+  (function initTips() {
+    var targets = $$("[data-tip]");
+    if (!targets.length) return;
+    var touch = window.matchMedia("(hover: none)").matches;
+
+    var tip = document.createElement("div");
+    tip.className = "tip";
+    tip.setAttribute("role", "status");
+    tip.setAttribute("aria-hidden", "true");
+    document.body.appendChild(tip);
+    var current = null;
+
+    function strip(html) { var d = document.createElement("div"); d.innerHTML = html; return d.textContent.replace(/\s+/g, " ").trim(); }
+
+    targets.forEach(function (el) {
+      if (!el.hasAttribute("tabindex")) el.setAttribute("tabindex", "0");
+      if (!el.getAttribute("aria-label")) el.setAttribute("aria-label", strip(el.getAttribute("data-tip")));
+      if (!el.getAttribute("role")) el.setAttribute("role", "img");
+    });
+
+    function place(x, y) {
+      var tw = tip.offsetWidth, th = tip.offsetHeight, vw = window.innerWidth, vh = window.innerHeight, pad = 8;
+      var px = x + 14, py = y + 16;
+      if (px + tw + pad > vw) px = x - tw - 14;
+      if (px < pad) px = pad;
+      if (py + th + pad > vh) py = y - th - 14;
+      if (py < pad) py = pad;
+      tip.style.transform = "translate(" + Math.round(px) + "px," + Math.round(py) + "px)";
+    }
+    function placeAtEl(el) {
+      var r = el.getBoundingClientRect(), tw = tip.offsetWidth, th = tip.offsetHeight, vw = window.innerWidth, pad = 8;
+      var px = r.left + r.width / 2 - tw / 2, py = r.top - th - 10;
+      if (py < pad) py = r.bottom + 10;
+      if (px + tw + pad > vw) px = vw - tw - pad;
+      if (px < pad) px = pad;
+      tip.style.transform = "translate(" + Math.round(px) + "px," + Math.round(py) + "px)";
+    }
+    function show(el) {
+      current = el;
+      tip.innerHTML = el.getAttribute("data-tip");
+      tip.classList.add("is-on");
+      tip.setAttribute("aria-hidden", "false");
+      var g = el.closest("[data-tip-group]");
+      if (g) g.classList.add("tipping");
+      el.classList.add("ti-active");
+    }
+    function hide() {
+      tip.classList.remove("is-on");
+      tip.setAttribute("aria-hidden", "true");
+      if (current) {
+        var g = current.closest("[data-tip-group]");
+        if (g) g.classList.remove("tipping");
+        current.classList.remove("ti-active");
+        current = null;
+      }
+    }
+
+    if (!touch) {
+      targets.forEach(function (el) {
+        el.addEventListener("mouseenter", function (e) { show(el); place(e.clientX, e.clientY); });
+        el.addEventListener("mousemove", function (e) { if (current === el) place(e.clientX, e.clientY); });
+        el.addEventListener("mouseleave", hide);
+        el.addEventListener("focus", function () { show(el); placeAtEl(el); });
+        el.addEventListener("blur", hide);
+      });
+    } else {
+      targets.forEach(function (el) {
+        el.addEventListener("click", function (e) { e.stopPropagation(); if (current === el) { hide(); } else { show(el); placeAtEl(el); } });
+        el.addEventListener("focus", function () { show(el); placeAtEl(el); });
+        el.addEventListener("blur", hide);
+      });
+      document.addEventListener("click", function () { if (current) hide(); });
+      window.addEventListener("scroll", function () { if (current) hide(); }, { passive: true });
+    }
+    window.addEventListener("keydown", function (e) { if (e.key === "Escape" && current) hide(); });
+  })();
+
+  /* -------- 14. Diagrama de silos (G10): botón "Conectar" -------- */
+  var silosBtn = $("#silosConnect");
+  if (silosBtn) {
+    silosBtn.addEventListener("click", function () {
+      var s = $(".silos");
+      if (!s) return;
+      s.classList.remove("is-animated");
+      void s.offsetWidth;
+      s.classList.add("is-animated");
+    });
+  }
+
 })();

@@ -97,13 +97,13 @@
 
         <figure class="gchart reveal" data-interactive="gchart">
           <figcaption class="gchart__title">Los canales que mejor convierten no son los que más inversión reciben</figcaption>
-          <div class="gbars" role="img" aria-label="Tasa de conversión de sesión por canal: Email 22,1%, SMS 21,1%, Paid Search 20,3%, Organic Social 19,2%, Referral 17,4%, Organic Search 15,1%.">
-            <div class="gbar gbar--red"><span class="gbar__label">Email</span><span class="gbar__track"><span class="gbar__fill" style="--w:88.4%"></span></span><span class="gbar__val tabular">22,1%</span></div>
-            <div class="gbar"><span class="gbar__label">SMS</span><span class="gbar__track"><span class="gbar__fill" style="--w:84.4%"></span></span><span class="gbar__val tabular">21,1%</span></div>
-            <div class="gbar"><span class="gbar__label">Paid Search</span><span class="gbar__track"><span class="gbar__fill" style="--w:81.2%"></span></span><span class="gbar__val tabular">20,3%</span></div>
-            <div class="gbar"><span class="gbar__label">Organic Social</span><span class="gbar__track"><span class="gbar__fill" style="--w:76.8%"></span></span><span class="gbar__val tabular">19,2%</span></div>
-            <div class="gbar"><span class="gbar__label">Referral</span><span class="gbar__track"><span class="gbar__fill" style="--w:69.6%"></span></span><span class="gbar__val tabular">17,4%</span></div>
-            <div class="gbar"><span class="gbar__label">Organic Search</span><span class="gbar__track"><span class="gbar__fill" style="--w:60.4%"></span></span><span class="gbar__val tabular">15,1%</span></div>
+          <div class="gbars" data-tip-group role="img" aria-label="Tasa de conversión de sesión por canal: Email 22,1%, SMS 21,1%, Paid Search 20,3%, Organic Social 19,2%, Referral 17,4%, Organic Search 15,1%.">
+            <div class="gbar gbar--red ti" data-tip="<strong>Email · 22,1%</strong>17,5% de los ingresos con solo 11% de las sesiones"><span class="gbar__label">Email</span><span class="gbar__track"><span class="gbar__fill" style="--w:88.4%"></span></span><span class="gbar__val tabular">22,1%</span></div>
+            <div class="gbar ti" data-tip="<strong>SMS · 21,1%</strong>El canal infrautilizado: conversión top, volumen mínimo"><span class="gbar__label">SMS</span><span class="gbar__track"><span class="gbar__fill" style="--w:84.4%"></span></span><span class="gbar__val tabular">21,1%</span></div>
+            <div class="gbar ti" data-tip="<strong>Paid Search · 20,3%</strong>22,6% de los ingresos · cierre de intención"><span class="gbar__label">Paid Search</span><span class="gbar__track"><span class="gbar__fill" style="--w:81.2%"></span></span><span class="gbar__val tabular">20,3%</span></div>
+            <div class="gbar ti" data-tip="<strong>Organic Social · 19,2%</strong>Awareness orgánico con conversión alta"><span class="gbar__label">Organic Social</span><span class="gbar__track"><span class="gbar__fill" style="--w:76.8%"></span></span><span class="gbar__val tabular">19,2%</span></div>
+            <div class="gbar ti" data-tip="<strong>Referral · 17,4%</strong>Volumen residual"><span class="gbar__label">Referral</span><span class="gbar__track"><span class="gbar__fill" style="--w:69.6%"></span></span><span class="gbar__val tabular">17,4%</span></div>
+            <div class="gbar ti" data-tip="<strong>Organic Search · 15,1%</strong>SEO con recorrido de mejora"><span class="gbar__label">Organic Search</span><span class="gbar__track"><span class="gbar__fill" style="--w:60.4%"></span></span><span class="gbar__val tabular">15,1%</span></div>
           </div>
           <p class="gchart__src">Tasa de conversión de sesión por canal · Fuente: GA4, Adquisición de tráfico · 18 abr–16 jul 2026</p>
         </figure>
@@ -123,23 +123,23 @@
         <!-- INTERACTIVO 1 — Funnel PDP → carrito -->
         <div class="block">
           <h3 class="block__title reveal">Del funnel, dónde se rompe</h3>
-          <div class="funnel reveal" data-interactive="funnel" role="img" aria-label="Funnel: ve producto 3,12M usuarios (100%); añade al carrito 520K, drop del 58%; inicia el pago 433K; compra 290K.">
-            <div class="funnel__row">
+          <div class="funnel reveal" data-interactive="funnel" data-tip-group role="img" aria-label="Funnel: ve producto 3,12M usuarios (100%); añade al carrito 520K, drop del 58%; inicia el pago 433K; compra 290K.">
+            <div class="funnel__row ti" data-tip="<strong>Ve producto</strong>3,12M usuarios · 69,7% del total">
               <span class="funnel__step">Ve producto</span>
               <span class="funnel__track"><span class="funnel__fill" style="--w:100%"></span></span>
               <span class="funnel__val tabular">3,12M</span>
             </div>
-            <div class="funnel__row funnel__row--red">
+            <div class="funnel__row funnel__row--red ti" data-tip="<strong>Añade al carrito</strong>520K · 11,63% · −58% vs paso anterior: aquí está la fricción">
               <span class="funnel__step">Añade al carrito</span>
               <span class="funnel__track"><span class="funnel__fill" style="--w:16.7%"></span></span>
               <span class="funnel__val tabular">520K <span class="funnel__drop">−58%</span></span>
             </div>
-            <div class="funnel__row">
+            <div class="funnel__row ti" data-tip="<strong>Inicia el pago</strong>433K · 9,68% · −17% vs paso anterior">
               <span class="funnel__step">Inicia el pago</span>
               <span class="funnel__track"><span class="funnel__fill" style="--w:13.9%"></span></span>
               <span class="funnel__val tabular">433K</span>
             </div>
-            <div class="funnel__row">
+            <div class="funnel__row ti" data-tip="<strong>Compra</strong>290K · 6,5% · el checkout iniciado retiene bien">
               <span class="funnel__step">Compra</span>
               <span class="funnel__track"><span class="funnel__fill" style="--w:9.3%"></span></span>
               <span class="funnel__val tabular">290K</span>
@@ -203,6 +203,18 @@
           </div>
         </div>
 
+        <figure class="gchart gchart--tall reveal" data-interactive="gchart">
+          <figcaption class="gchart__title">Concentración del top 5</figcaption>
+          <div class="gbars gbars--wide" data-tip-group role="img" aria-label="Proporción relativa dentro del top 5: Bronzing 60%, Golden 30%, Hair Radiance 5%, Caring 3%, D+ 2%.">
+            <div class="gbar gbar--red ti" data-tip="<strong>Bronzing Radiance Self-Tanning Cream</strong>El más vendido · fuertemente estacional (verano)"><span class="gbar__label">Bronzing</span><span class="gbar__track"><span class="gbar__fill" style="--w:100%"></span></span><span class="gbar__val tabular">~60%</span></div>
+            <div class="gbar ti" data-tip="<strong>Golden Radiance Body Oil</strong>El ancla elegida · 16.703 reseñas · demanda estable todo el año"><span class="gbar__label">Golden · ancla</span><span class="gbar__track"><span class="gbar__fill" style="--w:50%"></span></span><span class="gbar__val tabular">~30%</span></div>
+            <div class="gbar ti" data-tip="<strong>Hair Radiance Keratin Spray</strong>~5% del top 5"><span class="gbar__label">Hair Radiance</span><span class="gbar__track"><span class="gbar__fill" style="--w:8.3%"></span></span><span class="gbar__val tabular">~5%</span></div>
+            <div class="gbar ti" data-tip="<strong>Caring Microbiome Smart Deodorant</strong>~3% del top 5"><span class="gbar__label">Caring</span><span class="gbar__track"><span class="gbar__fill" style="--w:5%"></span></span><span class="gbar__val tabular">~3%</span></div>
+            <div class="gbar ti" data-tip="<strong>D+ Natural Suncare Mineral Lotion</strong>~2% del top 5"><span class="gbar__label">D+ Suncare</span><span class="gbar__track"><span class="gbar__fill" style="--w:3.3%"></span></span><span class="gbar__val tabular">~2%</span></div>
+          </div>
+          <p class="gchart__src">Proporción relativa dentro del top 5 · el top 2 concentra ~75% del revenue del canal · Fuente: GA4, Compras en comercio electrónico</p>
+        </figure>
+
         <p class="pullquote pullquote--wide reveal">Ninguna de las tres requiere tecnología nueva. La mayor palanca del canal está en activos que ya están pagados.</p>
 
         <!-- Expandible hallazgos secundarios -->
@@ -227,11 +239,11 @@
                 <figcaption class="gchart__title">Tráfico por dispositivo</figcaption>
                 <div class="gdonut">
                   <svg viewBox="0 0 120 120" role="img" aria-label="Dispositivos: mobile 92%, desktop 6%, tablet 2%.">
-                    <g transform="rotate(-90 60 60)" fill="none" stroke-width="15">
+                    <g transform="rotate(-90 60 60)" fill="none" stroke-width="15" data-tip-group>
                       <circle class="seg seg--track" cx="60" cy="60" r="42"></circle>
-                      <circle class="seg seg--a" cx="60" cy="60" r="42" stroke-dasharray="242.8 263.9" stroke-dashoffset="0"></circle>
-                      <circle class="seg seg--b" cx="60" cy="60" r="42" stroke-dasharray="15.83 263.9" stroke-dashoffset="-242.8"></circle>
-                      <circle class="seg seg--c" cx="60" cy="60" r="42" stroke-dasharray="5.28 263.9" stroke-dashoffset="-258.63"></circle>
+                      <circle class="seg seg--a ti" cx="60" cy="60" r="42" stroke-dasharray="242.8 263.9" stroke-dashoffset="0" data-tip="<strong>Mobile · 92%</strong>Donde vive el negocio"></circle>
+                      <circle class="seg seg--b ti" cx="60" cy="60" r="42" stroke-dasharray="15.83 263.9" stroke-dashoffset="-242.8" data-tip="<strong>Desktop · 6%</strong>"></circle>
+                      <circle class="seg seg--c ti" cx="60" cy="60" r="42" stroke-dasharray="5.28 263.9" stroke-dashoffset="-258.63" data-tip="<strong>Tablet · 2%</strong>"></circle>
                     </g>
                     <text class="gdonut__big" x="60" y="58" text-anchor="middle">92%</text>
                     <text class="gdonut__sub" x="60" y="76" text-anchor="middle">mobile</text>
@@ -246,9 +258,9 @@
               </figure>
               <figure class="gchart gchart--mini">
                 <figcaption class="gchart__title">Usuarios afectados por errores JS</figcaption>
-                <div class="gbars gbars--mini">
-                  <div class="gbar gbar--red"><span class="gbar__label">Con error</span><span class="gbar__track"><span class="gbar__fill" style="--w:12%"></span></span><span class="gbar__val tabular">12%</span></div>
-                  <div class="gbar"><span class="gbar__label">Sin error</span><span class="gbar__track"><span class="gbar__fill" style="--w:88%"></span></span><span class="gbar__val tabular">88%</span></div>
+                <div class="gbars gbars--mini" data-tip-group>
+                  <div class="gbar gbar--red ti" data-tip="<strong>Errores JS · 12% de usuarios</strong>~2,4M eventos de error en 90 días · deuda técnica visible"><span class="gbar__label">Con error</span><span class="gbar__track"><span class="gbar__fill" style="--w:12%"></span></span><span class="gbar__val tabular">12%</span></div>
+                  <div class="gbar ti" data-tip="<strong>Sin error · 88%</strong>La mayoría navega sin incidencias"><span class="gbar__label">Sin error</span><span class="gbar__track"><span class="gbar__fill" style="--w:88%"></span></span><span class="gbar__val tabular">88%</span></div>
                 </div>
                 <p class="gchart__src">Fuente: GA4, evento js_error · ~2,4M eventos en 90 días</p>
               </figure>
@@ -405,11 +417,21 @@
 
         <figure class="gchart gchart--cols reveal" data-interactive="gchart">
           <figcaption class="gchart__title">1 de cada 4 compradores repite</figcaption>
-          <div class="gcols" role="img" aria-label="Compradores nuevos 199K frente a recurrentes 67K.">
-            <div class="gcol"><span class="gcol__bar"><span class="gcol__fill" style="--h:100%"></span></span><span class="gcol__val tabular">199K</span><span class="gcol__label">Nuevos</span></div>
-            <div class="gcol gcol--red"><span class="gcol__bar"><span class="gcol__fill" style="--h:33.7%"></span></span><span class="gcol__val tabular">67K</span><span class="gcol__label">Recurrentes</span></div>
+          <div class="gcols" data-tip-group role="img" aria-label="Compradores nuevos 199K frente a recurrentes 67K.">
+            <div class="gcol ti" data-tip="<strong>Nuevos · 199K</strong>El 75%: compran una vez y no vuelven"><span class="gcol__bar"><span class="gcol__fill" style="--h:100%"></span></span><span class="gcol__val tabular">199K</span><span class="gcol__label">Nuevos</span></div>
+            <div class="gcol gcol--red ti" data-tip="<strong>Recurrentes · 67K</strong>El 25% · aquí vive la palanca del case"><span class="gcol__bar"><span class="gcol__fill" style="--h:33.7%"></span></span><span class="gcol__val tabular">67K</span><span class="gcol__label">Recurrentes</span></div>
           </div>
           <p class="gchart__src">Fuente: GA4, Monetización · compradores 90 días</p>
+        </figure>
+
+        <figure class="gchart reveal" data-interactive="gchart">
+          <figcaption class="gchart__title">Recurrencia: hoy vs benchmark vs objetivo</figcaption>
+          <div class="gbench" data-tip-group role="img" aria-label="Recurrencia: Freshly hoy 25%, benchmark del sector 40 a 45%, objetivo del funnel 40%.">
+            <div class="gb gb--now ti" data-tip="<strong>Freshly hoy · 25%</strong>1 de cada 4 repite"><span class="gb__bar"><span class="gb__fill" style="--h:55.6%"></span></span><span class="gb__val tabular">25%</span><span class="gb__lab">Freshly hoy</span></div>
+            <div class="gb gb--range ti" data-tip="<strong>Benchmark sector · 40-45%</strong>Typology, Officine Buly, Susanne Kaufmann a 12 meses"><span class="gb__bar"><span class="gb__band" style="--h1:88.9%;--h2:100%"></span><span class="gb__fill" style="--h:88.9%"></span></span><span class="gb__val tabular">40-45%</span><span class="gb__lab">Benchmark</span></div>
+            <div class="gb gb--target ti" data-tip="<strong>Objetivo del funnel · 40%</strong>Alcanzable con el flujo de segunda compra (Test 3)"><span class="gb__bar"><span class="gb__fill" style="--h:88.9%"></span></span><span class="gb__val tabular">40%</span><span class="gb__lab">Objetivo</span></div>
+          </div>
+          <p class="gchart__src">Recurrencia de compradores · benchmark de marcas DTC de cosmética natural comparables en Europa</p>
         </figure>
 
         <ul class="levers reveal" data-stagger>
@@ -579,19 +601,13 @@
           <h3 class="block__title reveal">Forecast en curva relativa</h3>
           <p class="block__hint reveal">Índice semanal · baseline = 100</p>
           <div class="chart reveal" data-interactive="chart">
-            <svg class="chart__svg" viewBox="0 0 800 280" role="img" aria-label="Curva de forecast semanal indexada: S1 127, S2 139, S3 270, S4 453 (pico), S5 257, S6 247, S7 285, S8 165.">
+            <svg class="chart__svg" viewBox="0 0 800 280" data-tip-group role="img" aria-label="Curva de forecast semanal indexada: S1 127, S2 139, S3 270, S4 453 (pico Black Week), S5 257, S6 247, S7 285, S8 165. Baseline 100.">
               <line class="chart__grid" x1="40" y1="240" x2="760" y2="240"></line>
+              <line class="chart__baseline" x1="40" y1="196.25" x2="760" y2="196.25"></line>
+              <text class="chart__baselab" x="44" y="190">baseline 100</text>
               <path class="chart__area" d="M40,240 L40,184.4 142.9,179.2 245.7,121.9 348.6,41.8 451.4,127.6 554.3,131.9 657.1,115.3 760,167.8 L760,240 Z"></path>
               <polyline class="chart__line" points="40,184.4 142.9,179.2 245.7,121.9 348.6,41.8 451.4,127.6 554.3,131.9 657.1,115.3 760,167.8"></polyline>
               <g class="chart__label-g">
-                <circle class="chart__dot" cx="40" cy="184.4" r="4"></circle>
-                <circle class="chart__dot" cx="142.9" cy="179.2" r="4"></circle>
-                <circle class="chart__dot" cx="245.7" cy="121.9" r="4"></circle>
-                <circle class="chart__dot chart__peak" cx="348.6" cy="41.8" r="6"></circle>
-                <circle class="chart__dot" cx="451.4" cy="127.6" r="4"></circle>
-                <circle class="chart__dot" cx="554.3" cy="131.9" r="4"></circle>
-                <circle class="chart__dot" cx="657.1" cy="115.3" r="4"></circle>
-                <circle class="chart__dot" cx="760" cy="167.8" r="4"></circle>
                 <text class="chart__vlabel" x="40" y="172">127</text>
                 <text class="chart__vlabel" x="142.9" y="167">139</text>
                 <text class="chart__vlabel" x="245.7" y="110">270</text>
@@ -608,6 +624,16 @@
                 <text class="chart__xlabel" x="554.3" y="262">S6</text>
                 <text class="chart__xlabel" x="657.1" y="262">S7</text>
                 <text class="chart__xlabel" x="760" y="262">S8</text>
+              </g>
+              <g class="chart__pts">
+                <g class="pt ti" tabindex="0" data-tip="<strong>S1 · índice 127</strong>Pre-calentamiento · acceso anticipado, sin descuento"><circle class="pt__hit" cx="40" cy="184.4" r="16"></circle><circle class="chart__dot" cx="40" cy="184.4" r="4"></circle></g>
+                <g class="pt ti" tabindex="0" data-tip="<strong>S2 · índice 139</strong>Pre-calentamiento · acceso anticipado, sin descuento"><circle class="pt__hit" cx="142.9" cy="179.2" r="16"></circle><circle class="chart__dot" cx="142.9" cy="179.2" r="4"></circle></g>
+                <g class="pt ti" tabindex="0" data-tip="<strong>S3 · índice 270</strong>Freshly Week · packs de rutina"><circle class="pt__hit" cx="245.7" cy="121.9" r="16"></circle><circle class="chart__dot" cx="245.7" cy="121.9" r="4"></circle></g>
+                <g class="pt pt--peak ti" tabindex="0" data-tip="<strong>S4 · índice 453</strong>Black Week · pico ×4,5 · bundle + regalo por umbral, sin descuento plano"><circle class="pt__hit" cx="348.6" cy="41.8" r="18"></circle><circle class="chart__dot chart__peak" cx="348.6" cy="41.8" r="6"></circle></g>
+                <g class="pt ti" tabindex="0" data-tip="<strong>S5 · índice 257</strong>Navidad · cofres a precio pleno"><circle class="pt__hit" cx="451.4" cy="127.6" r="16"></circle><circle class="chart__dot" cx="451.4" cy="127.6" r="4"></circle></g>
+                <g class="pt ti" tabindex="0" data-tip="<strong>S6 · índice 247</strong>Navidad · cofres a precio pleno"><circle class="pt__hit" cx="554.3" cy="131.9" r="16"></circle><circle class="chart__dot" cx="554.3" cy="131.9" r="4"></circle></g>
+                <g class="pt ti" tabindex="0" data-tip="<strong>S7 · índice 285</strong>Navidad · cofres a precio pleno"><circle class="pt__hit" cx="657.1" cy="115.3" r="16"></circle><circle class="chart__dot" cx="657.1" cy="115.3" r="4"></circle></g>
+                <g class="pt ti" tabindex="0" data-tip="<strong>S8 · índice 165</strong>Last Call · consolidación + siembra de enero"><circle class="pt__hit" cx="760" cy="167.8" r="16"></circle><circle class="chart__dot" cx="760" cy="167.8" r="4"></circle></g>
               </g>
             </svg>
           </div>
@@ -654,6 +680,43 @@
             <article class="mini"><h4>Comprador nuevo</h4><p>Cross-sell educativo hacia otra categoría.</p></article>
             <article class="mini"><h4>Dormido</h4><p>Reactivación con test de perfil renovado.</p></article>
           </div>
+          <figure class="gchart gchart--tall reveal" data-interactive="gchart">
+            <figcaption class="gchart__title">Presión de email por segmento y fase</figcaption>
+            <div class="heat" data-tip-group role="img" aria-label="Mapa de emails por segmento y fase. Club 3-2-3-2-1, Recurrente 0-2-3-2-1, Nuevo 1-0-3-2-0, Dormido 0-0-2-2-0.">
+              <span class="heat__corner" aria-hidden="true"></span>
+              <span class="heat__col">Pre</span><span class="heat__col">Freshly</span><span class="heat__col">Black</span><span class="heat__col">Navidad</span><span class="heat__col">Last</span>
+
+              <span class="heat__row">Club</span>
+              <span class="heat__cell"><span class="heat__dot heat3 ti" data-tip="<strong>Club · Pre-calentamiento</strong>3 emails"></span></span>
+              <span class="heat__cell"><span class="heat__dot heat2 ti" data-tip="<strong>Club · Freshly Week</strong>2 emails"></span></span>
+              <span class="heat__cell"><span class="heat__dot heat3 ti" data-tip="<strong>Club · Black Week</strong>3 emails + SMS en momentos de urgencia"></span></span>
+              <span class="heat__cell"><span class="heat__dot heat2 ti" data-tip="<strong>Club · Navidad</strong>2 emails"></span></span>
+              <span class="heat__cell"><span class="heat__dot heat1 ti" data-tip="<strong>Club · Last Call</strong>1 email"></span></span>
+
+              <span class="heat__row">Recurrente</span>
+              <span class="heat__cell"><span class="heat__dot heat0"></span></span>
+              <span class="heat__cell"><span class="heat__dot heat2 ti" data-tip="<strong>Recurrente · Freshly Week</strong>2 emails"></span></span>
+              <span class="heat__cell"><span class="heat__dot heat3 ti" data-tip="<strong>Recurrente · Black Week</strong>3 emails + SMS en momentos de urgencia"></span></span>
+              <span class="heat__cell"><span class="heat__dot heat2 ti" data-tip="<strong>Recurrente · Navidad</strong>2 emails"></span></span>
+              <span class="heat__cell"><span class="heat__dot heat1 ti" data-tip="<strong>Recurrente · Last Call</strong>1 email"></span></span>
+
+              <span class="heat__row">Nuevo</span>
+              <span class="heat__cell"><span class="heat__dot heat1 ti" data-tip="<strong>Nuevo · Pre-calentamiento</strong>1 email"></span></span>
+              <span class="heat__cell"><span class="heat__dot heat0"></span></span>
+              <span class="heat__cell"><span class="heat__dot heat3 ti" data-tip="<strong>Nuevo · Black Week</strong>3 emails"></span></span>
+              <span class="heat__cell"><span class="heat__dot heat2 ti" data-tip="<strong>Nuevo · Navidad</strong>2 emails"></span></span>
+              <span class="heat__cell"><span class="heat__dot heat0"></span></span>
+
+              <span class="heat__row">Dormido</span>
+              <span class="heat__cell"><span class="heat__dot heat0"></span></span>
+              <span class="heat__cell"><span class="heat__dot heat0"></span></span>
+              <span class="heat__cell"><span class="heat__dot heat2 ti" data-tip="<strong>Dormido · Black Week</strong>2 emails"></span></span>
+              <span class="heat__cell"><span class="heat__dot heat2 ti" data-tip="<strong>Dormido · Navidad</strong>2 emails"></span></span>
+              <span class="heat__cell"><span class="heat__dot heat0"></span></span>
+            </div>
+            <p class="gchart__src">Menos envíos, más relevantes: nadie recibe todo, cada segmento recibe lo suyo</p>
+          </figure>
+
           <details class="acc reveal">
             <summary>Frecuencias por segmento</summary>
             <div class="acc__body">
@@ -673,6 +736,21 @@
         <div class="summary reveal">
           <p>Tres rituales, tres herramientas, un principio. Un equipo multidisciplinar gestiona en paralelo tres flujos: lo planificado (~70%), lo reactivo (~20%) y lo emergente (~10%). El modelo no busca controlarlo todo — busca dar ritmo sin caer en reunión constante.</p>
         </div>
+
+        <figure class="gchart reveal" data-interactive="gchart">
+          <figcaption class="gchart__title">Los tres flujos de trabajo</figcaption>
+          <div class="gstack" data-tip-group role="img" aria-label="Reparto de trabajo: planificado 70%, reactivo 20%, emergente 10%.">
+            <span class="gseg gseg--a ti" style="--w:70%" data-tip="<strong>Planificado · 70%</strong>Campañas, roadmap, tests programados: el ritmo lo dan los rituales"><span class="gseg__t">70%</span></span>
+            <span class="gseg gseg--b ti" style="--w:20%" data-tip="<strong>Reactivo · 20%</strong>Incidencias y urgencias: lo absorbe el war room, no la agenda de todos"><span class="gseg__t">20%</span></span>
+            <span class="gseg gseg--c ti" style="--w:10%" data-tip="<strong>Emergente · 10%</strong>Oportunidades no planificadas: el 10% que suele generar lo inesperado"><span class="gseg__t">10%</span></span>
+          </div>
+          <div class="gstack__legend">
+            <span><span class="dot gseg--a"></span>Planificado</span>
+            <span><span class="dot gseg--b"></span>Reactivo</span>
+            <span><span class="dot gseg--c"></span>Emergente</span>
+          </div>
+          <p class="gchart__src">El modelo protege el 70% sin ignorar el 30% restante</p>
+        </figure>
 
         <div class="cols-3 reveal" data-stagger>
           <article class="col">
@@ -779,6 +857,43 @@
           <h3 class="block__title reveal">IA: conectar lo que ya está pagado</h3>
           <p class="prose reveal">El asistente conversacional y el buscador ya existen, pero funcionan en silos: uno vive en soporte, el otro casi no se usa. Ninguno está en el punto donde se pierde el 58% del funnel. La propuesta no es comprar tecnología nueva.</p>
 
+          <figure class="gchart reveal" data-interactive="gchart">
+            <div class="gchart__head">
+              <figcaption class="gchart__title">Tres activos, tres silos — y el punto de decisión sin cubrir</figcaption>
+              <button class="gbtn" id="silosConnect" type="button">Conectar ↧</button>
+            </div>
+            <div class="silos" data-interactive="gchart" data-tip-group>
+              <svg viewBox="0 0 600 320" role="img" aria-label="Tres activos desconectados (Asistente IA, Buscador, Test de perfil) que deberían conectarse con la ficha de producto, donde se pierde el 58%.">
+                <path class="silos__link" pathLength="1" d="M105,90 Q105,165 250,226"></path>
+                <path class="silos__link" pathLength="1" d="M300,90 L300,226"></path>
+                <path class="silos__link" pathLength="1" d="M495,90 Q495,165 350,226"></path>
+
+                <g class="silo ti" tabindex="0" data-tip="<strong>Asistente IA (soporte)</strong>Ya existe, vive en la esquina de soporte">
+                  <rect class="silo__box" x="20" y="30" width="170" height="60" rx="6"></rect>
+                  <text class="silo__t" x="105" y="56">Asistente IA</text>
+                  <text class="silo__sub" x="105" y="74">soporte</text>
+                </g>
+                <g class="silo ti" tabindex="0" data-tip="<strong>Buscador</strong>Muerto: nadie busca cosmética por referencia">
+                  <rect class="silo__box" x="215" y="30" width="170" height="60" rx="6"></rect>
+                  <text class="silo__t" x="300" y="56">Buscador</text>
+                  <text class="silo__sub" x="300" y="74">19 búsq. / 90 días</text>
+                </g>
+                <g class="silo ti" tabindex="0" data-tip="<strong>Test de perfil</strong>Perfil rico del cliente que no se usa en la compra">
+                  <rect class="silo__box" x="410" y="30" width="170" height="60" rx="6"></rect>
+                  <text class="silo__t" x="495" y="56">Test de perfil</text>
+                  <text class="silo__sub" x="495" y="74">datos del cliente</text>
+                </g>
+
+                <g class="silo silo--target ti" tabindex="0" data-tip="<strong>Ficha de producto</strong>El punto de decisión donde ninguno de los tres está presente">
+                  <rect class="silo__box" x="170" y="226" width="260" height="66" rx="6"></rect>
+                  <text class="silo__t silo__t--big" x="300" y="255">Ficha de producto</text>
+                  <text class="silo__sub silo__sub--target" x="300" y="275">aquí se pierde el 58%</text>
+                </g>
+              </svg>
+            </div>
+            <p class="gchart__src">La propuesta no es comprar tecnología nueva — es conectar lo que ya está pagado</p>
+          </figure>
+
           <div class="anchor anchor--ia reveal">
             <div>
               <span class="anchor__tag">Caso prioritario</span>
@@ -826,6 +941,30 @@
             <p>Positivo, sin drama, con capacidad de foco intenso cuando un tema me apasiona — así aprendo herramientas nuevas rápido.</p>
           </article>
         </div>
+
+        <figure class="gchart reveal" data-interactive="gchart">
+          <figcaption class="gchart__title">El perfil T-shape</figcaption>
+          <div class="tshape" data-interactive="gchart" data-tip-group>
+            <svg class="tshape__svg" viewBox="0 0 600 320" role="img" aria-label="Perfil en T: amplitud en branding, packaging, publicidad y marketing digital; profundidad en eCommerce y automatización.">
+              <g class="tshape__h">
+                <rect class="tseg tseg--h ti" x="40" y="40" width="130" height="64" rx="4" tabindex="0" data-tip="<strong>Branding</strong>Identidad y dirección creativa: sé cómo se construye una marca"></rect>
+                <rect class="tseg tseg--h ti" x="170" y="40" width="130" height="64" rx="4" tabindex="0" data-tip="<strong>Packaging</strong>Años en cosmética: entiendo el producto físico desde la fórmula"></rect>
+                <rect class="tseg tseg--h ti" x="300" y="40" width="130" height="64" rx="4" tabindex="0" data-tip="<strong>Publicidad</strong>Campañas y creatividad: hablo el idioma de las agencias"></rect>
+                <rect class="tseg tseg--h ti" x="430" y="40" width="130" height="64" rx="4" tabindex="0" data-tip="<strong>Marketing digital</strong>Canales, contenido y datos"></rect>
+                <text class="tseg__lab" x="105" y="77">Branding</text>
+                <text class="tseg__lab" x="235" y="77">Packaging</text>
+                <text class="tseg__lab" x="365" y="77">Publicidad</text>
+                <text class="tseg__lab" x="495" y="70">Marketing</text>
+                <text class="tseg__lab" x="495" y="85">digital</text>
+              </g>
+              <g class="tshape__v">
+                <rect class="tseg tseg--v ti" x="235" y="104" width="130" height="196" rx="4" tabindex="0" data-tip="<strong>eCommerce &amp; Automatización</strong>18 años de profundidad: P&amp;L, funnel, marketplaces, automatización — el canal como negocio, no como web"></rect>
+                <text class="tseg__lab tseg__lab--v" x="300" y="206" transform="rotate(-90 300 206)">eCommerce &amp; Automatización</text>
+              </g>
+            </svg>
+          </div>
+          <p class="gchart__src">Profundidad en el canal, amplitud en todo lo que lo rodea</p>
+        </figure>
       </div>
     </section>
 

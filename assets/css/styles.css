@@ -614,3 +614,122 @@ p.gchart__src { margin-top: var(--s2); }
   .gbar { grid-template-columns: 96px 1fr auto; }
   .gcols { gap: var(--s5); }
 }
+
+/* =========================================================================
+   GRÁFICOS INTERACTIVOS — tooltip reutilizable + resaltado + nuevos charts
+   ========================================================================= */
+
+/* Tooltip flotante */
+.tip { position: fixed; top: 0; left: 0; z-index: 200; max-width: 264px; background: #1F1F1F; border: 1px solid #2E2E2E; border-radius: 4px; box-shadow: 0 8px 28px rgba(0,0,0,.45); padding: .55rem .7rem; font-size: 13px; line-height: 1.42; color: var(--ink); pointer-events: none; opacity: 0; transition: opacity .12s ease; will-change: transform; }
+.tip.is-on { opacity: 1; }
+.tip strong { display: block; font-family: var(--font-display); font-weight: 600; font-size: 13px; margin-bottom: .15rem; color: var(--ink); }
+@media (prefers-reduced-motion: reduce) { .tip { transition: none; } }
+
+/* elemento interactivo + resaltado del activo */
+.ti { cursor: pointer; transition: opacity .15s ease; }
+[data-tip-group].tipping .ti:not(.ti-active) { opacity: .4; }
+
+/* barras horizontales anchas (G4) */
+.gbars--wide .gbar { grid-template-columns: 128px 1fr auto; }
+.gbars--wide .gbar__label { font-size: .8rem; white-space: nowrap; }
+
+/* cabecera de gráfico con botón */
+.gchart__head { display: flex; align-items: baseline; justify-content: space-between; gap: var(--s3); flex-wrap: wrap; margin-bottom: var(--s3); }
+.gchart__head .gchart__title { margin-bottom: 0; }
+.gbtn { font-family: var(--font-text); font-size: .72rem; text-transform: uppercase; letter-spacing: .1em; color: var(--accent); border: 1px solid var(--accent); border-radius: var(--r-card); padding: .35rem .7rem; white-space: nowrap; transition: background .2s; }
+.gbtn:hover { background: var(--accent-soft); }
+
+/* G6 — benchmark de recurrencia (barras verticales con rango) */
+.gbench { display: flex; align-items: flex-end; justify-content: center; gap: var(--s5); margin-top: var(--s2); }
+.gb { display: flex; flex-direction: column; align-items: center; }
+.gb__bar { position: relative; width: 72px; height: 180px; display: flex; align-items: flex-end; background: rgba(237,233,224,.04); border-radius: 2px; }
+.gb__fill { position: relative; z-index: 1; width: 100%; height: 0; background: var(--ink-2); border-radius: 2px 2px 0 0; transition: height 1s var(--ease); }
+.is-animated .gb__fill { height: var(--h); }
+.gb--now .gb__fill { background: var(--ink-2); box-shadow: inset 0 0 0 1.5px var(--accent); }
+.gb--range .gb__fill { background: var(--accent); }
+.gb--target .gb__fill { background: var(--accent-soft); box-shadow: inset 0 0 0 1.5px var(--accent); }
+.gb__band { position: absolute; left: 0; right: 0; z-index: 0; bottom: var(--h1); height: calc(var(--h2) - var(--h1)); background: repeating-linear-gradient(45deg, var(--accent-soft), var(--accent-soft) 4px, transparent 4px, transparent 8px); }
+.gb__val { margin-top: .6rem; font-family: var(--font-display); font-weight: 600; font-size: 1.1rem; color: var(--ink); }
+.gb--range .gb__val, .gb--target .gb__val { color: var(--accent); }
+.gb__lab { font-size: .74rem; color: var(--ink-2); text-transform: uppercase; letter-spacing: .06em; margin-top: .2rem; text-align: center; }
+
+/* G7 — forecast: baseline + puntos interactivos */
+.chart { max-width: 880px; }
+.chart__svg { display: block; width: 100%; max-width: 820px; margin-inline: auto; }
+.chart__baseline { stroke: var(--ink-2); stroke-width: 1; stroke-dasharray: 4 4; opacity: .55; }
+.chart__baselab { fill: var(--ink-2); font-family: var(--font-text); font-size: 10px; letter-spacing: .04em; }
+.pt { cursor: pointer; }
+.pt__hit { fill: transparent; }
+.pt .chart__dot { transition: transform .15s ease; transform-box: fill-box; transform-origin: center; }
+.pt.ti-active .chart__dot { transform: scale(1.7); }
+
+/* G8 — heatmap de email */
+.heat { display: grid; grid-template-columns: auto repeat(5, 1fr); gap: .4rem .5rem; align-items: center; margin-top: var(--s2); max-width: 560px; }
+.heat__col { font-size: .66rem; text-transform: uppercase; letter-spacing: .06em; color: var(--ink-2); text-align: center; }
+.heat__row { font-size: .8rem; color: var(--ink); padding-right: .5rem; white-space: nowrap; }
+.heat__cell { display: grid; place-items: center; height: 42px; }
+.heat__dot { border-radius: 50%; transition: transform .4s var(--ease), opacity .4s var(--ease); }
+.is-animated .heat__dot { transform: none; opacity: 1; }
+.heat__dot { transform: scale(.4); opacity: 0; }
+.heat0 { width: 10px; height: 10px; border: 1px solid var(--line); background: transparent; }
+.heat1 { width: 16px; height: 16px; background: rgba(237,233,224,.28); }
+.heat2 { width: 22px; height: 22px; background: rgba(237,233,224,.5); }
+.heat3 { width: 28px; height: 28px; background: var(--accent); }
+
+/* G9 — barra apilada 100% */
+.gstack { display: flex; width: 100%; height: 52px; border-radius: 3px; overflow: hidden; margin-top: var(--s2); background: rgba(237,233,224,.04); }
+.gseg { height: 100%; display: flex; align-items: center; justify-content: center; width: 0; transition: width .9s var(--ease); overflow: hidden; }
+.is-animated .gseg { width: var(--w); }
+.gseg--a { background: rgba(237,233,224,.22); }
+.gseg--b { background: rgba(237,233,224,.44); }
+.gseg--c { background: var(--accent); }
+.gseg__t { font-family: var(--font-display); font-weight: 600; font-size: .9rem; color: var(--ink); }
+.gseg--c .gseg__t { color: var(--on-accent); }
+.gstack__legend { display: flex; gap: var(--s3); margin-top: var(--s2); font-size: .78rem; color: var(--ink-2); flex-wrap: wrap; }
+.gstack__legend span { display: inline-flex; align-items: center; gap: .4rem; }
+.gstack__legend .dot { width: 10px; height: 10px; border-radius: 2px; }
+
+/* G10 — diagrama de silos */
+.silos { margin-top: var(--s3); }
+.silos svg { display: block; width: 100%; max-width: 600px; height: auto; margin-inline: auto; }
+.silo { cursor: pointer; }
+.silo__box { fill: #1F1F1F; stroke: var(--line); stroke-width: 1.5; }
+.silo__t { fill: var(--ink); font-family: var(--font-display); font-weight: 600; font-size: 15px; text-anchor: middle; }
+.silo__sub { fill: var(--ink-2); font-size: 11px; text-anchor: middle; }
+.silo--target .silo__box { fill: var(--accent-soft); stroke: var(--accent); }
+.silo--target .silo__t--big { fill: var(--accent); font-size: 17px; }
+.silo--target .silo__sub--target { fill: var(--accent); }
+.silos__link { fill: none; stroke: var(--accent); stroke-width: 2; stroke-dasharray: 1; stroke-dashoffset: 1; }
+.silos.is-animated .silos__link { transition: stroke-dashoffset .8s var(--ease); stroke-dashoffset: 0; }
+.silos.is-animated .silos__link:nth-of-type(2) { transition-delay: .15s; }
+.silos.is-animated .silos__link:nth-of-type(3) { transition-delay: .3s; }
+
+/* G11 — perfil T-shape */
+.tshape { margin-top: var(--s3); }
+.tshape svg { display: block; width: 100%; max-width: 560px; height: auto; margin-inline: auto; }
+.tseg { cursor: pointer; }
+.tseg--h { fill: rgba(237,233,224,.12); stroke: var(--line); stroke-width: 1; }
+.tseg--v { fill: var(--accent); stroke: none; }
+.tseg__lab { fill: var(--ink); font-family: var(--font-text); font-size: 12px; text-anchor: middle; pointer-events: none; }
+.tseg__lab--v { fill: var(--on-accent); font-family: var(--font-display); font-weight: 600; font-size: 12px; letter-spacing: -0.01em; }
+.tshape__h { transform: scaleX(0); transform-box: fill-box; transform-origin: left center; }
+.tshape.is-animated .tshape__h { transition: transform .6s var(--ease); transform: scaleX(1); }
+.tshape__v { transform: scaleY(0); transform-box: fill-box; transform-origin: center top; }
+.tshape.is-animated .tshape__v { transition: transform .5s var(--ease) .6s; transform: scaleY(1); }
+
+@media (prefers-reduced-motion: reduce) {
+  .tshape__h, .tshape__v { transform: none !important; }
+  .silos__link { stroke-dashoffset: 0 !important; }
+  .heat__dot { transform: none !important; opacity: 1 !important; }
+}
+
+@media (max-width: 760px) {
+  .gbench { gap: var(--s4); }
+  .gb__bar { width: 60px; height: 150px; }
+  .heat { gap: .3rem .3rem; }
+  .heat__row { font-size: .7rem; }
+  .heat__col { font-size: .56rem; }
+  .heat__cell { height: 34px; }
+  .heat1 { width: 13px; height: 13px; } .heat2 { width: 18px; height: 18px; } .heat3 { width: 22px; height: 22px; }
+  .gbars--wide .gbar { grid-template-columns: 92px 1fr auto; }
+}
