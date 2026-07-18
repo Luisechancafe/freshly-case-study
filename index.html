@@ -78,34 +78,38 @@
 
         <div class="stats reveal" data-stagger role="list">
           <div class="stat" role="listitem">
-            <span class="stat__num tabular" data-count-to="15.25" data-decimals="2" data-suffix="M€">0M€</span>
+            <span class="stat__num tabular" data-count-to="15.2" data-decimals="1" data-suffix="M€">0M€</span>
             <span class="stat__label">ingresos · 90 días</span>
           </div>
           <div class="stat" role="listitem">
-            <span class="stat__num tabular" data-count-to="8.86" data-decimals="2" data-suffix="M">0M</span>
+            <span class="stat__num tabular" data-count-to="8.88" data-decimals="2" data-suffix="M">0M</span>
             <span class="stat__label">sesiones · 90 días</span>
           </div>
           <div class="stat" role="listitem">
-            <span class="stat__num tabular" data-count-to="58" data-decimals="0" data-suffix="%">0%</span>
-            <span class="stat__label">drop entre ver producto y añadir al carrito</span>
+            <span class="stat__num tabular" data-count-to="83" data-decimals="0" data-suffix="%">0%</span>
+            <span class="stat__label">drop entre ver producto y añadir al carrito (usuarios)</span>
           </div>
           <div class="stat" role="listitem">
             <span class="stat__num tabular" data-count-to="25" data-decimals="0" data-suffix="%">0%</span>
             <span class="stat__label">compradores que repiten compra</span>
           </div>
         </div>
+        <p class="gchart__src reveal">Fuente: ingresos y recurrencia <a href="https://analytics.google.com/analytics/web/#/a73272528p251613513/reports/dashboard?params=_u..nav%3Dmaui%26_u.dateOption%3Dlast90Days%26_u.comparisonOption%3Ddisabled&ruid=33A8E679-3069-448C-AA92-484F65963019&collectionId=4020252389&r=4020495832" target="_blank" rel="noopener">GA4 · Monetización</a> · sesiones <a href="https://analytics.google.com/analytics/web/#/a73272528p251613513/reports/explorer?params=_u..nav%3Dmaui%26_u.dateOption%3Dlast90Days%26_u.comparisonOption%3Ddisabled%26_r.explorerCard..rowsPerPage%3D25%26_r.explorerCard..columnFilters%3D%7B%22sessionConversionRate%22:%22purchase%22%7D%26_r.explorerCard..startRow%3D0%26_r.explorerCard..seldim%3D%5B%22sessionDefaultChannelGrouping%22%5D%26_r.explorerCard..hideBreakdown%3Dfalse&ruid=947DA441-A2C1-464C-BE71-F9D1BE13418D&collectionId=3848600560&r=5985478665" target="_blank" rel="noopener">GA4 · Adquisición de tráfico</a> · drop 83% <a href="https://analytics.google.com/analytics/web/#/a73272528p251613513/reports/explorer?params=_u..nav%3Dmaui%26_u.dateOption%3Dlast90Days%26_r.explorerCard..startRow%3D0%26_r.explorerCard..rowsPerPage%3D50&ruid=B79E7DCC-76C1-4C33-A3B5-66E930856081&collectionId=4020285184&r=3848535578" target="_blank" rel="noopener">GA4 · Eventos</a> · 19 abr–17 jul 2026</p>
 
         <figure class="gchart reveal" data-interactive="gchart">
           <figcaption class="gchart__title">Los canales que mejor convierten no son los que más inversión reciben</figcaption>
-          <div class="gbars" data-tip-group role="img" aria-label="Tasa de conversión de sesión por canal: Email 22,1%, SMS 21,1%, Paid Search 20,3%, Organic Social 19,2%, Referral 17,4%, Organic Search 15,1%.">
-            <div class="gbar gbar--red ti" data-tip="<strong>Email · 22,1%</strong>17,5% de los ingresos con solo 11% de las sesiones"><span class="gbar__label">Email</span><span class="gbar__track"><span class="gbar__fill" style="--w:88.4%"></span></span><span class="gbar__val tabular">22,1%</span></div>
-            <div class="gbar ti" data-tip="<strong>SMS · 21,1%</strong>El canal infrautilizado: conversión top, volumen mínimo"><span class="gbar__label">SMS</span><span class="gbar__track"><span class="gbar__fill" style="--w:84.4%"></span></span><span class="gbar__val tabular">21,1%</span></div>
-            <div class="gbar ti" data-tip="<strong>Paid Search · 20,3%</strong>22,6% de los ingresos · cierre de intención"><span class="gbar__label">Paid Search</span><span class="gbar__track"><span class="gbar__fill" style="--w:81.2%"></span></span><span class="gbar__val tabular">20,3%</span></div>
-            <div class="gbar ti" data-tip="<strong>Organic Social · 19,2%</strong>Awareness orgánico con conversión alta"><span class="gbar__label">Organic Social</span><span class="gbar__track"><span class="gbar__fill" style="--w:76.8%"></span></span><span class="gbar__val tabular">19,2%</span></div>
-            <div class="gbar ti" data-tip="<strong>Referral · 17,4%</strong>Volumen residual"><span class="gbar__label">Referral</span><span class="gbar__track"><span class="gbar__fill" style="--w:69.6%"></span></span><span class="gbar__val tabular">17,4%</span></div>
-            <div class="gbar ti" data-tip="<strong>Organic Search · 15,1%</strong>SEO con recorrido de mejora"><span class="gbar__label">Organic Search</span><span class="gbar__track"><span class="gbar__fill" style="--w:60.4%"></span></span><span class="gbar__val tabular">15,1%</span></div>
+          <p class="gchart__note reveal">Paid Social concentra el 34,7% de las sesiones (3,08M) con la CR de compra más baja de los canales grandes; Email genera el 17,5% de los ingresos con el 11,3% de las sesiones.</p>
+          <div class="gbars gbars--conv" data-tip-group role="img" aria-label="CR de compra por canal: Paid Search 6,45%, SMS 5,57%, Email 5,05%, Organic Social 4,56%, Organic Search 4,31%, Referral 4,06%, Paid Social 2,24%. Media del sitio 3,71%.">
+            <span class="refline" style="--ref:0.5752" aria-hidden="true"><span class="refline__lab">media 3,71%</span></span>
+            <div class="gbar ti" data-tip="<strong>Paid Search · 6,45%</strong>La CR de compra más alta · cierre de intención (22,6% de los ingresos)"><span class="gbar__label">Paid Search</span><span class="gbar__track"><span class="gbar__fill" style="--w:100%"></span></span><span class="gbar__val tabular">6,45%</span></div>
+            <div class="gbar ti" data-tip="<strong>SMS · 5,57%</strong>Conversión top con volumen mínimo actual (9K sesiones)"><span class="gbar__label">SMS</span><span class="gbar__track"><span class="gbar__fill" style="--w:86.4%"></span></span><span class="gbar__val tabular">5,57%</span></div>
+            <div class="gbar gbar--red ti" data-tip="<strong>Email · 5,05%</strong>17,5% de los ingresos con el 11,3% de las sesiones"><span class="gbar__label">Email</span><span class="gbar__track"><span class="gbar__fill" style="--w:78.3%"></span></span><span class="gbar__val tabular">5,05%</span></div>
+            <div class="gbar ti" data-tip="<strong>Organic Social · 4,56%</strong>Awareness orgánico con conversión alta"><span class="gbar__label">Organic Social</span><span class="gbar__track"><span class="gbar__fill" style="--w:70.7%"></span></span><span class="gbar__val tabular">4,56%</span></div>
+            <div class="gbar ti" data-tip="<strong>Organic Search · 4,31%</strong>SEO con recorrido de mejora"><span class="gbar__label">Organic Search</span><span class="gbar__track"><span class="gbar__fill" style="--w:66.8%"></span></span><span class="gbar__val tabular">4,31%</span></div>
+            <div class="gbar ti" data-tip="<strong>Referral · 4,06%</strong>Volumen residual"><span class="gbar__label">Referral</span><span class="gbar__track"><span class="gbar__fill" style="--w:62.9%"></span></span><span class="gbar__val tabular">4,06%</span></div>
+            <div class="gbar ti" data-tip="<strong>Paid Social · 2,24%</strong>34,7% de las sesiones (3,08M) con la CR más baja de los canales grandes"><span class="gbar__label">Paid Social</span><span class="gbar__track"><span class="gbar__fill" style="--w:34.7%"></span></span><span class="gbar__val tabular">2,24%</span></div>
           </div>
-          <p class="gchart__src">Tasa de conversión de sesión por canal · Fuente: GA4, Adquisición de tráfico · 18 abr–16 jul 2026</p>
+          <p class="gchart__src">Tasa de conversión de sesión (evento purchase) · Fuente: <a href="https://analytics.google.com/analytics/web/#/a73272528p251613513/reports/explorer?params=_u..nav%3Dmaui%26_u.dateOption%3Dlast90Days%26_u.comparisonOption%3Ddisabled%26_r.explorerCard..rowsPerPage%3D25%26_r.explorerCard..columnFilters%3D%7B%22sessionConversionRate%22:%22purchase%22%7D%26_r.explorerCard..startRow%3D0%26_r.explorerCard..seldim%3D%5B%22sessionDefaultChannelGrouping%22%5D%26_r.explorerCard..hideBreakdown%3Dfalse&ruid=947DA441-A2C1-464C-BE71-F9D1BE13418D&collectionId=3848600560&r=5985478665" target="_blank" rel="noopener">GA4 · Adquisición de tráfico</a> · 19 abr–17 jul 2026</p>
         </figure>
       </div>
     </section>
@@ -129,30 +133,30 @@
         <!-- INTERACTIVO 1 — Funnel PDP → carrito -->
         <div class="block">
           <h3 class="block__title reveal">Del funnel, dónde se rompe</h3>
-          <div class="funnel reveal" data-interactive="funnel" data-tip-group role="img" aria-label="Funnel: ve producto 3,12M usuarios (100%); añade al carrito 520K, drop del 58%; inicia el pago 433K; compra 290K.">
+          <div class="funnel reveal" data-interactive="funnel" data-tip-group role="img" aria-label="Funnel por usuarios únicos: ve producto 3,12M; añade al carrito 520K, drop del 83%; inicia el pago 433K; compra 290K.">
             <div class="funnel__row ti" data-tip="<strong>Ve producto</strong>3,12M usuarios · 69,7% del total">
               <span class="funnel__step">Ve producto</span>
               <span class="funnel__track"><span class="funnel__fill" style="--w:100%"></span></span>
               <span class="funnel__val tabular">3,12M</span>
             </div>
-            <div class="funnel__row funnel__row--red ti" data-tip="<strong>Añade al carrito</strong>520K · 11,63% · −58% vs paso anterior: aquí está la fricción">
+            <div class="funnel__row funnel__row--red ti" data-tip="<strong>Añade al carrito</strong>520K usuarios · −83% vs paso anterior: aquí está la fricción">
               <span class="funnel__step">Añade al carrito</span>
               <span class="funnel__track"><span class="funnel__fill" style="--w:16.7%"></span></span>
-              <span class="funnel__val tabular">520K <span class="funnel__drop">−58%</span></span>
+              <span class="funnel__val tabular">520K <span class="funnel__drop">−83%</span></span>
             </div>
-            <div class="funnel__row ti" data-tip="<strong>Inicia el pago</strong>433K · 9,68% · −17% vs paso anterior">
+            <div class="funnel__row ti" data-tip="<strong>Inicia el pago</strong>433K usuarios · −17% vs paso anterior">
               <span class="funnel__step">Inicia el pago</span>
               <span class="funnel__track"><span class="funnel__fill" style="--w:13.9%"></span></span>
               <span class="funnel__val tabular">433K</span>
             </div>
-            <div class="funnel__row ti" data-tip="<strong>Compra</strong>290K · 6,5% · el checkout iniciado retiene bien">
+            <div class="funnel__row ti" data-tip="<strong>Compra</strong>290K usuarios · −33% vs paso anterior · el checkout iniciado retiene bien">
               <span class="funnel__step">Compra</span>
               <span class="funnel__track"><span class="funnel__fill" style="--w:9.3%"></span></span>
               <span class="funnel__val tabular">290K</span>
             </div>
           </div>
-          <p class="block__note reveal">Del que ve un producto al que lo añade al carrito se pierde el 58%. Del carrito a la compra se pierde solo un 5% adicional. La fricción real está en la ficha de producto, no en el checkout.</p>
-          <p class="gchart__src reveal">Fuente: GA4, informe de eventos (view_item → add_to_cart → begin_checkout → purchase) · 18 abr–16 jul 2026</p>
+          <p class="block__note reveal">Del que ve un producto al que lo añade al carrito se pierde el 83%. Quien llega al carrito, avanza: del carrito al pago se pierde solo un 17% adicional, y del pago a la compra un 33%. La fricción real está en la ficha de producto, no en el checkout.</p>
+          <p class="gchart__src reveal">Usuarios únicos por evento · Fuente: <a href="https://analytics.google.com/analytics/web/#/a73272528p251613513/reports/explorer?params=_u..nav%3Dmaui%26_u.dateOption%3Dlast90Days%26_r.explorerCard..startRow%3D0%26_r.explorerCard..rowsPerPage%3D50&ruid=B79E7DCC-76C1-4C33-A3B5-66E930856081&collectionId=4020285184&r=3848535578" target="_blank" rel="noopener">GA4 · Eventos</a> (view_item → add_to_cart → begin_checkout → purchase) · 19 abr–17 jul 2026</p>
         </div>
 
         <!-- Tres fricciones -->
@@ -170,7 +174,7 @@
           <article class="friction">
             <span class="friction__n">03</span>
             <h4 class="friction__title">El carrito invita a buscar descuento antes de pagar</h4>
-            <p>Cuatro estímulos de cupón conviven en la pantalla de pago. 6 de cada 10 usuarios que inician el pago intentan aplicar un código — fricción de margen, no de conversión, y autoinfligida.</p>
+            <p>Cuatro estímulos de cupón conviven en la pantalla de pago. 6 de cada 10 usuarios que inician el pago intentan aplicar un código — fricción de margen, no de conversión, y autoinfligida. <a href="https://analytics.google.com/analytics/web/#/a73272528p251613513/reports/explorer?params=_u..nav%3Dmaui%26_u.dateOption%3Dlast90Days%26_r.explorerCard..startRow%3D0%26_r.explorerCard..rowsPerPage%3D50&ruid=B79E7DCC-76C1-4C33-A3B5-66E930856081&collectionId=4020285184&r=3848535578" target="_blank" rel="noopener">259.892 de los 433.365 usuarios que inician el pago disparan coupon_attempt: un 60,0% exacto (GA4 · Eventos)</a>.</p>
             <details class="acc acc--inline">
               <summary>Matiz</summary>
               <div class="acc__body">
@@ -183,12 +187,12 @@
         <!-- Los 5 productos principales -->
         <div class="block">
           <h3 class="block__title reveal">Los 5 productos principales</h3>
-          <p class="block__hint reveal">Concentran ≈75% del revenue · es donde una mejora de conversión rinde más</p>
+          <p class="block__hint reveal">Concentran ~25% del revenue y ~40% de las vistas de ficha · es donde una mejora de conversión rinde más</p>
           <div class="products-row reveal" data-stagger>
             <figure class="product">
               <div class="product__frame product__frame--anchor"><div class="product__ph"><span class="initials">GR</span></div>
                 <!-- <img class="product__img" src="./assets/img/prod-golden-radiance.jpg" alt="Golden Radiance Body Oil" /> --></div>
-              <figcaption class="product__cap"><strong>Golden Radiance Body Oil</strong><span>Ancla · 16.703 reseñas</span></figcaption>
+              <figcaption class="product__cap"><strong>Golden Radiance Body Oil</strong><span>Ancla · 16.703 reseñas (ficha de producto)</span></figcaption>
             </figure>
             <figure class="product">
               <div class="product__frame"><div class="product__ph"><span class="initials">BR</span></div></div>
@@ -204,21 +208,21 @@
             </figure>
             <figure class="product">
               <div class="product__frame"><div class="product__ph"><span class="initials">D+</span></div></div>
-              <figcaption class="product__cap"><strong>D+ Natural Suncare Mineral Lotion</strong></figcaption>
+              <figcaption class="product__cap"><strong>D+ Natural Suncare Pediatrics Mineral Lotion</strong></figcaption>
             </figure>
           </div>
         </div>
 
         <figure class="gchart gchart--tall reveal" data-interactive="gchart">
           <figcaption class="gchart__title">Concentración del top 5</figcaption>
-          <div class="gbars gbars--wide" data-tip-group role="img" aria-label="Proporción relativa dentro del top 5: Bronzing 60%, Golden 30%, Hair Radiance 5%, Caring 3%, D+ 2%.">
-            <div class="gbar gbar--red ti" data-tip="<strong>Bronzing Radiance Self-Tanning Cream</strong>El más vendido · fuertemente estacional (verano)"><span class="gbar__label">Bronzing</span><span class="gbar__track"><span class="gbar__fill" style="--w:100%"></span></span><span class="gbar__val tabular">~60%</span></div>
-            <div class="gbar ti" data-tip="<strong>Golden Radiance Body Oil</strong>El ancla elegida · 16.703 reseñas · demanda estable todo el año"><span class="gbar__label">Golden · ancla</span><span class="gbar__track"><span class="gbar__fill" style="--w:50%"></span></span><span class="gbar__val tabular">~30%</span></div>
-            <div class="gbar ti" data-tip="<strong>Hair Radiance Keratin Spray</strong>~5% del top 5"><span class="gbar__label">Hair Radiance</span><span class="gbar__track"><span class="gbar__fill" style="--w:8.3%"></span></span><span class="gbar__val tabular">~5%</span></div>
-            <div class="gbar ti" data-tip="<strong>Caring Microbiome Smart Deodorant</strong>~3% del top 5"><span class="gbar__label">Caring</span><span class="gbar__track"><span class="gbar__fill" style="--w:5%"></span></span><span class="gbar__val tabular">~3%</span></div>
-            <div class="gbar ti" data-tip="<strong>D+ Natural Suncare Mineral Lotion</strong>~2% del top 5"><span class="gbar__label">D+ Suncare</span><span class="gbar__track"><span class="gbar__fill" style="--w:3.3%"></span></span><span class="gbar__val tabular">~2%</span></div>
+          <div class="gbars gbars--wide" data-tip-group role="img" aria-label="Proporción relativa dentro del top 5: Bronzing 41%, Golden 23%, Caring 17%, Hair Radiance 11%, D+ Suncare Pediatrics 8%.">
+            <div class="gbar gbar--red ti" data-tip="<strong>Bronzing Radiance Self-Tanning Cream</strong>41% del top 5 · el más vendido · fuertemente estacional (verano) · 21% de las vistas y 10,3% de los ingresos"><span class="gbar__label">Bronzing</span><span class="gbar__track"><span class="gbar__fill" style="--w:100%"></span></span><span class="gbar__val tabular">41%</span></div>
+            <div class="gbar ti" data-tip="<strong>Golden Radiance Body Oil</strong>23% del top 5 · el ancla elegida · demanda estable todo el año"><span class="gbar__label">Golden · ancla</span><span class="gbar__track"><span class="gbar__fill" style="--w:56.1%"></span></span><span class="gbar__val tabular">23%</span></div>
+            <div class="gbar ti" data-tip="<strong>Caring Microbiome Smart Deodorant</strong>17% del top 5"><span class="gbar__label">Caring</span><span class="gbar__track"><span class="gbar__fill" style="--w:41.5%"></span></span><span class="gbar__val tabular">17%</span></div>
+            <div class="gbar ti" data-tip="<strong>Hair Radiance Keratin Spray</strong>11% del top 5"><span class="gbar__label">Hair Radiance</span><span class="gbar__track"><span class="gbar__fill" style="--w:26.8%"></span></span><span class="gbar__val tabular">11%</span></div>
+            <div class="gbar ti" data-tip="<strong>D+ Natural Suncare Pediatrics Mineral Lotion</strong>8% del top 5"><span class="gbar__label">D+ Suncare</span><span class="gbar__track"><span class="gbar__fill" style="--w:19.5%"></span></span><span class="gbar__val tabular">8%</span></div>
           </div>
-          <p class="gchart__src">Proporción relativa dentro del top 5 · el top 2 concentra ~75% del revenue del canal · Fuente: GA4, Compras en comercio electrónico</p>
+          <p class="gchart__src">Proporción relativa dentro del top 5 · el top 5 concentra ~25% del revenue del canal (Bronzing solo: 21% de las vistas y 10,3% de los ingresos) · Fuente: <a href="https://analytics.google.com/analytics/web/#/a73272528p251613513/reports/explorer?params=_u..nav%3Dmaui%26_u.dateOption%3Dlast90Days%26_u.comparisonOption%3Ddisabled%26_r.explorerCard..rowsPerPage%3D50&ruid=FF628260-C088-488F-92E5-088DF29B6A2F&collectionId=4020252389&r=ecomm-product" target="_blank" rel="noopener">GA4 · Compras en comercio electrónico</a> · 19 abr–17 jul 2026</p>
         </figure>
 
         <p class="pullquote pullquote--wide reveal">Ninguna de las tres requiere tecnología nueva. La mayor palanca del canal está en activos que ya están pagados.</p>
@@ -229,12 +233,12 @@
           <div class="acc__body">
             <ul class="tick-list">
               <li>Checkout con pasos intermedios sin tracking correcto (steps con datos incoherentes)</li>
-              <li>~2,4M eventos de error JavaScript afectando a ~12% de usuarios</li>
+              <li>2.453.205 eventos de error JavaScript · 12,4% de usuarios afectados (553.653) — <a href="https://analytics.google.com/analytics/web/#/a73272528p251613513/reports/explorer?params=_u..nav%3Dmaui%26_u.dateOption%3Dlast90Days%26_r.explorerCard..startRow%3D0%26_r.explorerCard..rowsPerPage%3D50&ruid=B79E7DCC-76C1-4C33-A3B5-66E930856081&collectionId=4020285184&r=3848535578" target="_blank" rel="noopener">GA4 · Eventos</a></li>
               <li>92% del tráfico es mobile; desktop 6%, tablet 2%</li>
-              <li>Concentración de revenue: 2 productos → 75% de ingresos</li>
+              <li>Top 5 productos = ~25% de los ingresos y ~40% de las vistas de ficha; catálogo de 390 referencias con fuerte long tail</li>
               <li>Fuerte estacionalidad del top ventas (self-tanning + solar)</li>
               <li>Buscador con uso residual (19 búsquedas registradas en 90 días)</li>
-              <li>Canal AI Assistant emergente: ~92K usuarios ya llegan desde asistentes de IA</li>
+              <li>Canal AI Assistant emergente: ~4,2K sesiones (2,6K usuarios, 94K eventos) ya llegan desde asistentes de IA</li>
               <li>SEO orgánico con recorrido (peso bajo de Organic Search)</li>
               <li>~785K remove_from_cart → más que begin_checkout: señal de dudas en carrito</li>
               <li>Bizum ausente en métodos de pago, con España como mercado nº1 y 92% mobile</li>
@@ -265,10 +269,10 @@
               <figure class="gchart gchart--mini">
                 <figcaption class="gchart__title">Usuarios afectados por errores JS</figcaption>
                 <div class="gbars gbars--mini" data-tip-group>
-                  <div class="gbar gbar--red ti" data-tip="<strong>Errores JS · 12% de usuarios</strong>~2,4M eventos de error en 90 días · deuda técnica visible"><span class="gbar__label">Con error</span><span class="gbar__track"><span class="gbar__fill" style="--w:12%"></span></span><span class="gbar__val tabular">12%</span></div>
-                  <div class="gbar ti" data-tip="<strong>Sin error · 88%</strong>La mayoría navega sin incidencias"><span class="gbar__label">Sin error</span><span class="gbar__track"><span class="gbar__fill" style="--w:88%"></span></span><span class="gbar__val tabular">88%</span></div>
+                  <div class="gbar gbar--red ti" data-tip="<strong>Errores JS · 12,4% de usuarios</strong>2.453.205 eventos de error en 90 días · deuda técnica visible"><span class="gbar__label">Con error</span><span class="gbar__track"><span class="gbar__fill" style="--w:12.4%"></span></span><span class="gbar__val tabular">12,4%</span></div>
+                  <div class="gbar ti" data-tip="<strong>Sin error · 87,6%</strong>La mayoría navega sin incidencias"><span class="gbar__label">Sin error</span><span class="gbar__track"><span class="gbar__fill" style="--w:87.6%"></span></span><span class="gbar__val tabular">87,6%</span></div>
                 </div>
-                <p class="gchart__src">Fuente: GA4, evento js_error · ~2,4M eventos en 90 días</p>
+                <p class="gchart__src">Fuente: <a href="https://analytics.google.com/analytics/web/#/a73272528p251613513/reports/explorer?params=_u..nav%3Dmaui%26_u.dateOption%3Dlast90Days%26_r.explorerCard..startRow%3D0%26_r.explorerCard..rowsPerPage%3D50&ruid=B79E7DCC-76C1-4C33-A3B5-66E930856081&collectionId=4020285184&r=3848535578" target="_blank" rel="noopener">GA4 · Eventos</a> (js_error) · 2.453.205 eventos · 19 abr–17 jul 2026</p>
               </figure>
             </div>
           </div>
@@ -294,7 +298,7 @@
                     <span class="flip__label">Hipótesis</span>
                     <span class="flip__hyp">Si mostramos las 3 reseñas con foto mejor valoradas de usuarios verificados por encima del botón de compra en los 5 productos principales, la conversión ficha→carrito sube al menos un 15%.</span>
                     <span class="flip__label">KPI primario</span>
-                    <span class="flip__kpi">add-to-cart rate por vista de ficha (baseline 11,63% → objetivo 13,4%+)</span>
+                    <span class="flip__kpi">add-to-cart rate por vista de ficha (baseline 11,2%, top 5 agregado → objetivo 12,9%+, +15%)</span>
                   </span>
                 </span>
               </button>
@@ -304,7 +308,7 @@
                   <p><strong>KPIs secundarios:</strong> tiempo en ficha antes del add-to-cart · CR final a compra por vista de ficha · bounce rate en ficha · interacción con el módulo de reseñas.</p>
                   <p><strong>Muestra:</strong> ~4 semanas, ~50K usuarios por variante (volumen sobrado con 92% mobile).</p>
                   <p><strong>Esfuerzo:</strong> bajo (UX + integración con sistema de reseñas existente).</p>
-                  <p><strong>Impacto direccional:</strong> los 5 productos intervenidos concentran ~75% del revenue; una mejora del 15% en su conversión a carrito se traduce en un incremental anual estimado en el orden de 2M€ (estimación direccional, no compromiso).</p>
+                  <p><strong>Impacto direccional:</strong> los 5 productos intervenidos concentran ~25% del revenue (~4,1M€/90 días → ~16M€/año) y el mayor tráfico de fichas del catálogo; una mejora del 15% en su conversión a carrito → +2,4M€/año (estimación direccional, no compromiso).</p>
                 </div>
               </details>
             </div>
@@ -429,11 +433,11 @@
 
         <figure class="gchart gchart--cols reveal" data-interactive="gchart">
           <figcaption class="gchart__title">1 de cada 4 compradores repite</figcaption>
-          <div class="gcols" data-tip-group role="img" aria-label="Compradores nuevos 199K frente a recurrentes 67K.">
-            <div class="gcol ti" data-tip="<strong>Nuevos · 199K</strong>El 75%: compran una vez y no vuelven"><span class="gcol__bar"><span class="gcol__fill" style="--h:100%"></span></span><span class="gcol__val tabular">199K</span><span class="gcol__label">Nuevos</span></div>
-            <div class="gcol gcol--red ti" data-tip="<strong>Recurrentes · 67K</strong>El 25% · aquí vive la palanca del case"><span class="gcol__bar"><span class="gcol__fill" style="--h:33.7%"></span></span><span class="gcol__val tabular">67K</span><span class="gcol__label">Recurrentes</span></div>
+          <div class="gcols" data-tip-group role="img" aria-label="Compradores nuevos 198K frente a recurrentes 67K (total 265K).">
+            <div class="gcol ti" data-tip="<strong>Nuevos · 198K</strong>El 75%: compran una vez y no vuelven"><span class="gcol__bar"><span class="gcol__fill" style="--h:100%"></span></span><span class="gcol__val tabular">198K</span><span class="gcol__label">Nuevos</span></div>
+            <div class="gcol gcol--red ti" data-tip="<strong>Recurrentes · 67K</strong>El 25% · aquí vive la palanca del case"><span class="gcol__bar"><span class="gcol__fill" style="--h:33.8%"></span></span><span class="gcol__val tabular">67K</span><span class="gcol__label">Recurrentes</span></div>
           </div>
-          <p class="gchart__src">Fuente: GA4, Monetización · compradores 90 días</p>
+          <p class="gchart__src">Compradores 90 días (265K total) · Fuente: <a href="https://analytics.google.com/analytics/web/#/a73272528p251613513/reports/dashboard?params=_u..nav%3Dmaui%26_u.dateOption%3Dlast90Days%26_u.comparisonOption%3Ddisabled&ruid=33A8E679-3069-448C-AA92-484F65963019&collectionId=4020252389&r=4020495832" target="_blank" rel="noopener">GA4 · Monetización</a> · 19 abr–17 jul 2026</p>
         </figure>
 
         <figure class="gchart reveal" data-interactive="gchart">
@@ -443,7 +447,7 @@
             <div class="gb gb--range ti" data-tip="<strong>Benchmark sector · 40-45%</strong>Typology, Officine Buly, Susanne Kaufmann a 12 meses"><span class="gb__bar"><span class="gb__band" style="--h1:88.9%;--h2:100%"></span><span class="gb__fill" style="--h:88.9%"></span></span><span class="gb__val tabular">40-45%</span><span class="gb__lab">Benchmark</span></div>
             <div class="gb gb--target ti" data-tip="<strong>Objetivo del funnel · 40%</strong>Alcanzable con el flujo de segunda compra (Test 3)"><span class="gb__bar"><span class="gb__fill" style="--h:88.9%"></span></span><span class="gb__val tabular">40%</span><span class="gb__lab">Objetivo</span></div>
           </div>
-          <p class="gchart__src">Recurrencia de compradores · benchmark de marcas DTC de cosmética natural comparables en Europa</p>
+          <p class="gchart__src">Recurrencia de compradores · benchmark de marcas DTC de cosmética natural comparables en Europa · benchmark de mercado · estimación propia</p>
         </figure>
 
         <ul class="levers reveal" data-stagger>
@@ -455,7 +459,7 @@
         <details class="acc reveal">
           <summary>Referencia del sector</summary>
           <div class="acc__body">
-            <p>Marcas DTC de cosmética natural comparables en Europa (Typology, Officine Universelle Buly, Susanne Kaufmann) mantienen ratios de recurrencia en el rango del 40–45% a 12 meses. El 25% actual deja un recorrido de mejora significativo — y cada punto de recurrencia ganado a los volúmenes actuales tiene un impacto anual relevante en el orden de siete cifras.</p>
+            <p>Marcas DTC de cosmética natural comparables en Europa (Typology, Officine Universelle Buly, Susanne Kaufmann) mantienen ratios de recurrencia en el rango del 40–45% a 12 meses (benchmark de mercado · estimación propia). El 25% actual deja un recorrido de mejora significativo — y cada punto de recurrencia ganado vale ~0,5M€ al año a los volúmenes y AOV actuales (46€ · <a href="https://analytics.google.com/analytics/web/#/a73272528p251613513/reports/explorer?params=_u..nav%3Dmaui%26_u.dateOption%3Dlast90Days%26_r.explorerCard..rowsPerPage%3D50&ruid=transaction-id-report,5985258121,drive-online-sales&collectionId=5985258121&r=transaction-id-report" target="_blank" rel="noopener">GA4 · Transacciones</a>); cerrar el gap hasta el 40% vale varios millones al año.</p>
           </div>
         </details>
 
@@ -547,7 +551,7 @@
                 <tbody>
                   <tr><th scope="row">Paid Social</th><td>Awareness y reach en Fase 1, creatividades de "problema resuelto"</td><td><span class="pill pill--amber">Mantener con ajustes</span></td></tr>
                   <tr><th scope="row">Paid Search</th><td>Cierre de intención cualificada en Fase 3 (alta conversión demostrada)</td><td><span class="pill pill--green">Potenciar</span></td></tr>
-                  <tr><th scope="row">Email</th><td>Motor de Fases 4-5; el canal de mayor conversión, hoy infrautilizado</td><td><span class="pill pill--green">Potenciar mucho</span></td></tr>
+                  <tr><th scope="row">Email</th><td>Motor de Fases 4-5; el canal propio de mayor conversión: 5,05% de CR de compra y 17,5% de los ingresos con el 11,3% de las sesiones</td><td><span class="pill pill--green">Potenciar mucho</span></td></tr>
                   <tr><th scope="row">SMS</th><td>Complemento de email en Fase 5; conversión alta con volumen mínimo actual</td><td><span class="pill pill--green">Escalar</span></td></tr>
                   <tr><th scope="row">AI Assistant</th><td>Fase 1 emergente; ya trae tráfico desde asistentes de IA</td><td><span class="pill pill--green">Explorar</span></td></tr>
                   <tr><th scope="row">Organic Social</th><td>Awareness orgánico + prueba social</td><td><span class="pill pill--green">Potenciar</span></td></tr>
@@ -605,11 +609,11 @@
         <div class="block">
           <h3 class="block__title reveal">Timeline de campaña</h3>
           <ol class="timeline reveal" data-stagger>
-            <li class="tl"><div class="tl__head"><span class="tl__when">Sem. 1-2</span><span class="tl__title">Pre-calentamiento</span><span class="tl__vol">baseline +15%</span></div><div class="tl__body"><p>Acceso anticipado al Club, sin descuento.</p></div></li>
-            <li class="tl"><div class="tl__head"><span class="tl__when">Sem. 3</span><span class="tl__title">Freshly Week</span><span class="tl__vol">~×2,5</span></div><div class="tl__body"><p>Packs de rutina completa + descuento progresivo por ticket (no lineal).</p></div></li>
-            <li class="tl tl--red"><div class="tl__head"><span class="tl__when">Sem. 4</span><span class="tl__title">Black Week</span><span class="tl__vol">~×4</span></div><div class="tl__body"><p>Bundle ancla + regalo por umbral · SIN descuento plano de catálogo.</p></div></li>
-            <li class="tl"><div class="tl__head"><span class="tl__when">Sem. 5-7</span><span class="tl__title">Navidad</span><span class="tl__vol">~×2</span></div><div class="tl__body"><p>Cofres de edición limitada a precio pleno + envío garantizado.</p></div></li>
-            <li class="tl"><div class="tl__head"><span class="tl__when">Sem. 8</span><span class="tl__title">Last Call</span><span class="tl__vol">baseline +30%</span></div><div class="tl__body"><p>Consolidación + siembra de enero.</p></div></li>
+            <li class="tl"><div class="tl__head"><span class="tl__when">Sem. 1-2</span><span class="tl__title">Pre-calentamiento</span><span class="tl__vol">~+30%</span></div><div class="tl__body"><p>Acceso anticipado al Club, sin descuento.</p></div></li>
+            <li class="tl"><div class="tl__head"><span class="tl__when">Sem. 3</span><span class="tl__title">Freshly Week</span><span class="tl__vol">~×2,7</span></div><div class="tl__body"><p>Packs de rutina completa + descuento progresivo por ticket (no lineal).</p></div></li>
+            <li class="tl tl--red"><div class="tl__head"><span class="tl__when">Sem. 4</span><span class="tl__title">Black Week</span><span class="tl__vol">~×4,5</span></div><div class="tl__body"><p>Bundle ancla + regalo por umbral · SIN descuento plano de catálogo.</p></div></li>
+            <li class="tl"><div class="tl__head"><span class="tl__when">Sem. 5-7</span><span class="tl__title">Navidad</span><span class="tl__vol">~×2,5</span></div><div class="tl__body"><p>Cofres de edición limitada a precio pleno + envío garantizado · pico ×2,85 en el corte de envío garantizado (S7).</p></div></li>
+            <li class="tl"><div class="tl__head"><span class="tl__when">Sem. 8</span><span class="tl__title">Last Call</span><span class="tl__vol">~+65%</span></div><div class="tl__body"><p>Consolidación + siembra de enero.</p></div></li>
           </ol>
           <p class="pullquote pullquote--sm reveal"><strong>Coda — Enero:</strong> Un plan que termina el 31 de diciembre pierde la mitad de su potencial. Enero es donde el volumen de Nov-Dic se convierte en cliente recurrente o desaparece.</p>
         </div>
@@ -658,6 +662,36 @@
           <p class="block__note reveal">Curva relativa en vez de cifras absolutas: los datos absolutos requieren históricos internos; la curva permite recalibrar semanalmente sobre lo esperado. El forecast no es una predicción — es una hipótesis de trabajo que se calibra cada semana.</p>
         </div>
 
+        <!-- NUEVO — Forecast diario operativo -->
+        <div class="block">
+          <h3 class="block__title reveal">Forecast diario operativo</h3>
+          <p class="block__hint reveal">Inputs por día · 1 nov–31 dic 2026 · resumen semanal, expande al detalle diario</p>
+          <div class="fdaily reveal" data-fdaily>
+            <div class="fdaily__actions">
+              <span class="fdaily__hint">Toca una semana para ver los días</span>
+              <button class="gbtn" id="fdailyCsv" type="button">Descargar CSV (61 días)</button>
+            </div>
+            <div class="table-scroll">
+              <table class="table fdaily__table">
+                <thead>
+                  <tr>
+                    <th scope="col">Semana / fecha</th>
+                    <th scope="col">Fase</th>
+                    <th scope="col" class="num">Sesiones</th>
+                    <th scope="col" class="num">CR%</th>
+                    <th scope="col" class="num">AOV</th>
+                    <th scope="col" class="num">Transacc.</th>
+                    <th scope="col" class="num">Ingresos</th>
+                    <th scope="col" class="num">Inversión</th>
+                  </tr>
+                </thead>
+                <tbody id="fdailyBody"><tr><td colspan="8">Cargando modelo…</td></tr></tbody>
+              </table>
+            </div>
+          </div>
+          <p class="gchart__src reveal">Baseline: GA4 · 19 abr–17 jul 2026 (sesiones <a href="https://analytics.google.com/analytics/web/#/a73272528p251613513/reports/explorer?params=_u..nav%3Dmaui%26_u.dateOption%3Dlast90Days%26_u.comparisonOption%3Ddisabled%26_r.explorerCard..rowsPerPage%3D25%26_r.explorerCard..columnFilters%3D%7B%22sessionConversionRate%22:%22purchase%22%7D%26_r.explorerCard..startRow%3D0%26_r.explorerCard..seldim%3D%5B%22sessionDefaultChannelGrouping%22%5D%26_r.explorerCard..hideBreakdown%3Dfalse&ruid=947DA441-A2C1-464C-BE71-F9D1BE13418D&collectionId=3848600560&r=5985478665" target="_blank" rel="noopener">GA4 · Adquisición de tráfico</a>, AOV <a href="https://analytics.google.com/analytics/web/#/a73272528p251613513/reports/explorer?params=_u..nav%3Dmaui%26_u.dateOption%3Dlast90Days%26_r.explorerCard..rowsPerPage%3D50&ruid=transaction-id-report,5985258121,drive-online-sales&collectionId=5985258121&r=transaction-id-report" target="_blank" rel="noopener">GA4 · Transacciones</a>) · multiplicadores por fase y día, CR/AOV por fase e inversión (ERS objetivo): estimación propia · hipótesis de trabajo que se recalibra semanalmente. GA4 no tiene costes importados: la inversión se declara como derivada de un ratio objetivo, nunca como dato real.</p>
+        </div>
+
         <details class="acc reveal" open>
           <summary>Enero en detalle (4 hitos)</summary>
           <div class="acc__body">
@@ -685,7 +719,7 @@
                 </tbody>
               </table>
             </div>
-            <p class="block__note"><strong>Qué NO:</strong> descuento plano en catálogo · códigos genéricos difundidos · oferta agresiva en lanzamientos · competir por precio unitario. Los datos muestran que el cupón ya está sobreutilizado todo el año: añadir descuento agresivo en Nov-Dic amplifica ese comportamiento sin resolver retención.</p>
+            <p class="block__note"><strong>Qué NO:</strong> descuento plano en catálogo · códigos genéricos difundidos · oferta agresiva en lanzamientos · competir por precio unitario. Los datos muestran que el cupón ya está sobreutilizado todo el año: añadir descuento agresivo en Nov-Dic amplifica ese comportamiento sin resolver retención. El dato que lo respalda: el 60% de quienes inician el pago ya intentan aplicar un código (<a href="https://analytics.google.com/analytics/web/#/a73272528p251613513/reports/explorer?params=_u..nav%3Dmaui%26_u.dateOption%3Dlast90Days%26_r.explorerCard..startRow%3D0%26_r.explorerCard..rowsPerPage%3D50&ruid=B79E7DCC-76C1-4C33-A3B5-66E930856081&collectionId=4020285184&r=3848535578" target="_blank" rel="noopener">coupon_attempt · GA4 · Eventos</a>) — SAVE5, HELLO20 y compañía circulan solos. Más descuento plano no crea demanda: canibaliza margen.</p>
           </div>
         </details>
 
@@ -885,7 +919,7 @@
         <!-- IA -->
         <div class="block">
           <h3 class="block__title reveal">IA: conectar lo que ya está pagado</h3>
-          <p class="prose reveal">El asistente conversacional y el buscador ya existen, pero funcionan en silos: uno vive en soporte, el otro casi no se usa. Ninguno está en el punto donde se pierde el 58% del funnel. La propuesta no es comprar tecnología nueva.</p>
+          <p class="prose reveal">El asistente conversacional y el buscador ya existen, pero funcionan en silos: uno vive en soporte, el otro casi no se usa. Ninguno está en el punto donde se pierde el 83% del funnel. La propuesta no es comprar tecnología nueva.</p>
 
           <figure class="gchart reveal" data-interactive="gchart">
             <div class="gchart__head">
@@ -893,7 +927,7 @@
               <button class="gbtn" id="silosConnect" type="button">Conectar ↧</button>
             </div>
             <div class="silos" data-interactive="gchart" data-tip-group>
-              <svg viewBox="0 0 600 320" role="img" aria-label="Tres activos desconectados (Asistente IA, Buscador, Test de perfil) que deberían conectarse con la ficha de producto, donde se pierde el 58%.">
+              <svg viewBox="0 0 600 320" role="img" aria-label="Tres activos desconectados (Asistente IA, Buscador, Test de perfil) que deberían conectarse con la ficha de producto, donde se pierde el 83%.">
                 <path class="silos__link" pathLength="1" d="M105,90 Q105,165 250,226"></path>
                 <path class="silos__link" pathLength="1" d="M300,90 L300,226"></path>
                 <path class="silos__link" pathLength="1" d="M495,90 Q495,165 350,226"></path>
@@ -917,7 +951,7 @@
                 <g class="silo silo--target ti" tabindex="0" data-tip="<strong>Ficha de producto</strong>El punto de decisión donde ninguno de los tres está presente">
                   <rect class="silo__box" x="170" y="226" width="260" height="66" rx="6"></rect>
                   <text class="silo__t silo__t--big" x="300" y="255">Ficha de producto</text>
-                  <text class="silo__sub silo__sub--target" x="300" y="275">aquí se pierde el 58%</text>
+                  <text class="silo__sub silo__sub--target" x="300" y="275">aquí se pierde el 83%</text>
                 </g>
               </svg>
             </div>

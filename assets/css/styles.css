@@ -761,3 +761,43 @@ p.gchart__src { margin-top: var(--s2); }
 @media (max-width: 560px) {
   .shead__id { flex-direction: column; align-items: flex-start; gap: 4px; }
 }
+
+/* =========================================================================
+   CORRECCIONES GA4 — enlaces de fuente, nota, línea de referencia, forecast diario
+   ========================================================================= */
+
+/* enlaces de fuente */
+.gchart__src a, .block__note a, .qbox a, .tick-list a, .acc__body a, .prose a, .anchor__text a { color: var(--accent); text-decoration: underline; text-underline-offset: 2px; }
+.gchart__src a:hover, .block__note a:hover, .tick-list a:hover, .acc__body a:hover { opacity: .8; }
+
+/* nota de contraste sobre un gráfico */
+.gchart__note { font-size: .85rem; color: var(--ink-2); max-width: 66ch; margin-bottom: var(--s3); line-height: 1.5; }
+
+/* gráfico de canales con línea de media */
+.gbars--conv { position: relative; }
+.gbars--conv .gbar { grid-template-columns: 128px 1fr 56px; }
+.refline { position: absolute; top: -4px; bottom: 16px; left: calc(144px + (100% - 216px) * var(--ref)); width: 0; border-left: 1px dashed var(--ink-2); z-index: 2; pointer-events: none; }
+.refline__lab { position: absolute; top: -15px; left: 5px; font-size: 10px; color: var(--ink-2); white-space: nowrap; }
+
+/* forecast diario operativo */
+.fdaily__actions { display: flex; justify-content: space-between; align-items: center; gap: var(--s3); margin-bottom: var(--s2); flex-wrap: wrap; }
+.fdaily__hint { font-size: .7rem; text-transform: uppercase; letter-spacing: .1em; color: var(--ink-2); }
+.table th.num, .table td.num { text-align: right; white-space: nowrap; }
+.fweek { cursor: pointer; }
+.fweek th, .fweek td { border-top: 1px solid var(--line); font-weight: 600; color: var(--ink); }
+.fweek:hover th, .fweek:hover td { color: var(--accent); }
+.fweek__lbl::before { content: "▸"; color: var(--accent); margin-right: .4rem; display: inline-block; }
+.fweek.is-open .fweek__lbl::before { content: "▾"; }
+.fday { display: none; }
+.fday.is-shown { display: table-row; }
+.fday td, .fday th { font-size: .82rem; color: var(--ink-2); font-weight: 400; }
+
+/* impresión / PDF */
+@media print {
+  * { -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; }
+  .masthead, .nav-mobile { position: static !important; }
+  .burger, .btn-pdf, .gbtn, .fdaily__actions, .tip, .skip-link { display: none !important; }
+  .reveal, [data-stagger] > * { opacity: 1 !important; transform: none !important; }
+  .chapter { break-inside: avoid; }
+  a { color: var(--accent) !important; }
+}
