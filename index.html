@@ -68,9 +68,7 @@
         </div>
         <figure class="hero__portrait reveal">
           <div class="portrait-frame">
-            <div class="portrait-frame__ph"><span class="initials">LC</span></div>
-            <!-- Para poner la foto real:
-                 <img class="portrait-frame__img" src="./assets/img/luise.jpg" alt="Luise Chancafe Odar" /> -->
+            <img class="portrait-frame__img portrait-frame__img--color" src="./assets/img/hero.jpg" alt="Freshly Cosmetics" loading="lazy" />
           </div>
         </figure>
       </div>
@@ -190,7 +188,7 @@
           <article class="friction">
             <span class="friction__n">02</span>
             <h4 class="friction__title">Prueba social sin protagonismo visual</h4>
-            <p>Miles de reseñas reales en los productos principales (16.703 en el producto ancla), pero poco visibles antes del botón de compra.</p>
+            <p>La nota media ya vive junto al título, y la ficha usa bloques de eficacia testada. Pero el contenido de las reseñas — la voz real del cliente: 16.703 opiniones en el producto ancla — vive al final de la ficha, a varios scrolls del botón de compra y después del cross-sell (verificado en la ficha actual de freshlycosmetics.com).</p>
           </article>
           <article class="friction">
             <span class="friction__n">03</span>
@@ -262,7 +260,7 @@
               <li>Canal AI Assistant emergente: ~4,2K sesiones (2,6K usuarios, 94K eventos) ya llegan desde asistentes de IA</li>
               <li>SEO orgánico con recorrido (peso bajo de Organic Search)</li>
               <li>~785K remove_from_cart → más que begin_checkout: señal de dudas en carrito</li>
-              <li>Bizum ausente en métodos de pago, con España como mercado nº1 y 92% mobile</li>
+              <li>Bizum ausente en métodos de pago, con España como mercado nº1 y 92% mobile (verificado en el footer actual: Visa – Klarna y contrarreembolso, sin Bizum)</li>
               <li>Test de perfil (Freshly Test) con potencial infrautilizado en el journey posterior</li>
             </ul>
             <div class="gcharts-2" data-interactive="gchart">
@@ -317,7 +315,7 @@
                   </span>
                   <span class="flip__face flip__face--back">
                     <span class="flip__label">Hipótesis</span>
-                    <span class="flip__hyp">Si mostramos las 3 reseñas con foto mejor valoradas de usuarios verificados por encima del botón de compra en los 5 productos principales, la conversión ficha→carrito sube al menos un 15%.</span>
+                    <span class="flip__hyp">Si subimos al bloque de compra las 3 reseñas mejor valoradas de usuarios verificados (con foto cuando exista — la ficha ya permite adjuntarlas al escribir opinión) en los 5 productos principales, la conversión ficha→carrito sube al menos un 15%. No es crear un activo nuevo: es mover el que ya existe al punto de decisión.</span>
                     <span class="flip__label">KPI primario</span>
                     <span class="flip__kpi">add-to-cart rate por vista de ficha (baseline 11,2%, top 5 agregado → objetivo 12,9%+, +15%)</span>
                   </span>
@@ -433,6 +431,20 @@
           </details>
           <p class="block__note reveal">Empezaría por el Test 1 (win rápido, alta confianza) y en paralelo lanzaría el Test 3 (impacto transformacional que necesita horizonte largo). El Test 2 va en segunda oleada aprovechando los aprendizajes del 1 sobre la misma superficie.</p>
         </div>
+
+        <!-- Quick wins fuera de los tests -->
+        <details class="acc reveal">
+          <summary>Quick wins fuera de los tests (4 mejoras que se miden pre/post)</summary>
+          <div class="acc__body">
+            <p>No todo necesita un A/B. Cuatro mejoras que se miden pre/post y conviven con los tres tests:</p>
+            <ul class="tick-list">
+              <li><strong>Bizum en el checkout</strong> — ausente hoy en los métodos de pago (verificado en el footer actual: Visa, Maestro, Mastercard, Amex, PayPal, Apple Pay, Google Pay, Klarna y contrarreembolso), con España como mercado nº1 y 92% del tráfico mobile.</li>
+              <li><strong>Barra de compra fija en mobile</strong> — la ficha es larga (eficacia testada, acordeones, cross-sell, opiniones al final): el botón de compra no debería desaparecer nunca del viewport.</li>
+              <li><strong>Resumen de reseñas por tipo de piel junto al botón de compra</strong> — los filtros por piel ya existen en la sección de opiniones; mostrar su resumen en el punto de decisión ("Piel mixta: 4,8★ · 1.2K opiniones") y, a futuro, personalizado con el test de perfil.</li>
+              <li><strong>Incentivo Club a la reseña con foto</strong> — el formulario ya permite adjuntar foto, pero las opiniones visibles no la usan; incentivarla alimenta directamente el Test 1.</li>
+            </ul>
+          </div>
+        </details>
       </div>
     </section>
 
@@ -939,7 +951,7 @@
         <!-- IA -->
         <div class="block">
           <h3 class="block__title reveal">IA: conectar lo que ya está pagado</h3>
-          <p class="prose reveal">El asistente conversacional y el buscador ya existen, pero funcionan en silos: uno vive en soporte, el otro casi no se usa. Ninguno está en el punto donde se pierde el 83% del funnel. La propuesta no es comprar tecnología nueva.</p>
+          <p class="prose reveal">El asistente conversacional y el buscador ya existen, pero funcionan en silos: uno vive en soporte, el otro casi no se usa. Ninguno está en el punto donde se pierde el 83% del funnel. La propuesta no es comprar tecnología nueva. Comprobado sobre la web actual: asistente en soporte, buscador, test de perfil ("Haz el test") y miles de reseñas con filtros por tipo de piel — todos los activos existen; ninguno está en el punto de decisión.</p>
 
           <figure class="gchart reveal" data-interactive="gchart">
             <div class="gchart__head">
@@ -993,7 +1005,7 @@
 
           <ul class="tick-list reveal">
             <li>Redacción y traducción de contenido en 7 mercados con revisión humana</li>
-            <li>Análisis semántico de reseñas para detectar patrones de fricción (decenas de miles de reseñas que nadie puede leer a mano)</li>
+            <li>Análisis semántico de reseñas — los filtros por tipo de piel ya existen en la ficha; esto va un paso más allá: detectar patrones de fricción en el texto de decenas de miles de opiniones que nadie puede leer a mano.</li>
             <li>Asistencia al agente de soporte, nunca respuesta automática al cliente</li>
           </ul>
         </div>

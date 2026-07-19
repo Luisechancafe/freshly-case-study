@@ -181,7 +181,7 @@ h1,h2,h3 { font-family: var(--font-display); font-weight: 600; line-height: .96;
   .hero__grid { grid-template-columns: 1fr; gap: var(--s4); }
   .hero__portrait { justify-self: start; max-width: 260px; order: -1; }
 }
-.hero__sub { font-family: var(--font-display); font-style: italic; font-weight: 400; font-size: var(--fs-lead); color: var(--ink-2); max-width: 42ch; margin-top: var(--s4); line-height: 1.35; }
+.hero__sub { font-family: var(--font-display); font-style: italic; font-weight: 400; font-size: clamp(1.15rem, 1rem + 1vw, 1.5rem); color: #fff; max-width: 42ch; margin-top: var(--s4); line-height: 1.35; }
 .hero__sign { margin-top: var(--s5); font-size: var(--fs-meta); text-transform: uppercase; letter-spacing: .12em; color: var(--ink-2); }
 .hero__sign a { color: var(--ink); }
 
@@ -348,7 +348,7 @@ input[type="range"]::-moz-range-thumb { width: 20px; height: 20px; border-radius
 .sim__states { display: flex; flex-direction: column; gap: .3rem; margin-top: var(--s3); font-size: .82rem; color: var(--ink-2); }
 .sim__states strong { color: var(--ink); }
 .sim__state--ok strong { color: var(--accent); }
-.sim__disclaimer { font-family: var(--font-display); font-style: italic; font-size: .92rem; color: var(--ink-2); max-width: 62ch; margin-top: var(--s3); }
+.sim__disclaimer { font-family: var(--font-display); font-style: italic; font-size: 1.04rem; color: #fff; max-width: 62ch; margin-top: var(--s3); }
 
 /* =========================================================================
    ANCHOR / PRODUCTO ANCLA
@@ -428,7 +428,7 @@ input[type="range"]::-moz-range-thumb { width: 20px; height: 20px; border-radius
 .col__title { font-family: var(--font-display); font-weight: 600; font-size: 1.2rem; margin-bottom: var(--s2); padding-bottom: var(--s2); border-bottom: 1px solid var(--line); }
 .col p { font-size: .92rem; color: var(--ink-2); }
 .col__intro { font-size: .84rem; margin-bottom: var(--s2); }
-.col__rule { font-family: var(--font-display); font-style: italic; font-size: .88rem; margin-top: var(--s2); color: var(--ink-2); }
+.col__rule { font-family: var(--font-display); font-style: italic; font-size: 1rem; margin-top: var(--s2); color: #fff; }
 .col__big { font-family: var(--font-display); font-size: 1.25rem; line-height: 1.3; color: var(--ink) !important; }
 .tag-inline { display: inline-block; background: var(--accent-soft); color: var(--accent); font-size: .74rem; font-weight: 500; padding: .1rem .5rem; border-radius: 999px; }
 
@@ -807,13 +807,17 @@ p.gchart__src { margin-top: var(--s2); }
 /* bloque de vídeo */
 .videocard { background: #1F1F1F; border: 1px solid var(--line); border-radius: var(--r-card); padding: clamp(22px, 4vw, 48px); max-width: 1000px; }
 .videocard__title { font-family: var(--font-display); font-weight: 600; font-size: clamp(1.35rem, 1rem + 1.7vw, 2.2rem); line-height: 1.15; margin: var(--s2) 0; max-width: 30ch; }
-.videocard__sub { font-family: var(--font-display); font-style: italic; font-size: .95rem; color: var(--ink-2); margin-bottom: var(--s4); }
+.videocard__sub { font-family: var(--font-display); font-style: italic; font-size: 1.08rem; color: #fff; margin-bottom: var(--s4); }
 .videoframe { position: relative; aspect-ratio: 16 / 9; border-radius: var(--r-card); overflow: hidden; border: 1px solid var(--line); background: #000; }
 .videoframe iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
 
 /* fotos reales de producto */
 .product__img--photo { background: #fff; object-fit: cover; object-position: center; }
 .product__frame:has(.product__img--photo)::after { display: none; }
+
+/* imagen del hero en color (sin el filtro grayscale del retrato) */
+.portrait-frame__img--color { filter: none; }
+.portrait-frame:has(.portrait-frame__img)::after { display: none; }
 .products-row__credit { font-size: .72rem; color: var(--ink-2); margin-top: var(--s3); }
 
 /* CTA · trabajemos juntos */
@@ -833,7 +837,7 @@ p.gchart__src { margin-top: var(--s2); }
 /* botones Descargar PDF — bold blanco + pulso suave */
 @keyframes pulseSoft { 0%, 100% { box-shadow: 0 0 0 0 rgba(242,69,92,.45); } 50% { box-shadow: 0 0 0 9px rgba(242,69,92,0); } }
 @keyframes pulseSoftWhite { 0%, 100% { box-shadow: 0 0 0 0 rgba(255,255,255,.5); } 50% { box-shadow: 0 0 0 9px rgba(255,255,255,0); } }
-.btn-pdf { font-weight: 700; color: #fff; animation: pulseSoft 2.6s ease-in-out infinite; }
+.btn-pdf { font-weight: 700; color: #fff; animation: pulseSoftWhite 2.6s ease-in-out infinite; }
 .btn-pdf:hover { animation-play-state: paused; transform: translateY(-1px); }
 .close__pdf { font-weight: 700; color: #fff; animation: pulseSoftWhite 2.6s ease-in-out infinite; }
 .close__pdf:hover { animation-play-state: paused; }
